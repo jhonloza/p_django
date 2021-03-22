@@ -4,10 +4,15 @@ import 'package:p_django/templates/header.dart';
 import 'package:p_django/templates/leftmenu.dart';
 import 'package:p_django/unidad1/tema1.dart';
 import 'package:p_django/unidad2/tema1.dart';
+import 'package:p_django/unidad2/tema2.dart';
+import 'package:p_django/unidad2/tema3.dart';
 
 class Inicio extends StatelessWidget {
   TemaI t11 = new TemaI();
   Tema21 t21 = new Tema21();
+  Tema22 t22 = new Tema22();
+  Tema23 t23 = new Tema23();
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -303,7 +308,12 @@ class Inicio extends StatelessWidget {
                       new Expanded(
                         child: Container(
                           child: FlatButton(
-                              onPressed: null,
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => t22));
+                              },
                               child: Image.asset(
                                 'assets/images/tema2/tema22.png',
                                 height: 100,
@@ -330,7 +340,12 @@ class Inicio extends StatelessWidget {
                       new Expanded(
                         child: Container(
                           child: FlatButton(
-                              onPressed: null,
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => t23));
+                              },
                               child: Image.asset(
                                 'assets/images/tema2/tema23.png',
                                 height: 100,

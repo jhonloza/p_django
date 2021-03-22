@@ -3,18 +3,18 @@ import 'package:flutter/material.dart';
 import 'package:p_django/templates/header.dart';
 import 'package:p_django/templates/leftmenu.dart';
 
-class Tema21 extends StatelessWidget {
+class Tema23 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
     final screenWidth = screenSize.width;
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Tema 1',
+      title: 'Tema 3',
       home: Scaffold(
         appBar: Header(
           title: Text(
-            'Unidad 2, Tema 1',
+            'Unidad 2, Tema 3',
             style: TextStyle(
               fontFamily: 'PatuaOne',
               fontWeight: FontWeight.bold,
@@ -35,7 +35,7 @@ class Tema21 extends StatelessWidget {
                     children: [
                       new Text(''),
                       new Text(
-                        'PAQUETES EN PYTHON DJANGO',
+                        'Instalación de paquetes',
                         style: TextStyle(
                           fontFamily: 'PatuaOne',
                           fontSize: 38,
@@ -47,31 +47,38 @@ class Tema21 extends StatelessWidget {
                         child: Column(
                           children: [
                             Text(
-                              'Un paquete es una carpeta que contiene varios módulos. Siguiendo el ejemplo anterior, podemos diseñar un paquete matematica creando una carpeta con la siguiente estructura.',
+                              'Para instalar un paquete cualquiera debes ejecutar el comando pip de la siguiente manera:',
                               style: TextStyle(
                                   fontFamily: 'PatuaOne', fontSize: 24),
                               textAlign: TextAlign.justify,
                             ),
                             Text(''),
                             Image.network(
-                                'https://i.postimg.cc/02Hmdw1w/Captura-de-pantalla-2021-03-21-212357.jpg'),
+                                'https://i.postimg.cc/TwQjnLYK/1-Shared-Screenshot.jpg'),
                             Text(''),
                             Text(
-                              'Debe contener siempre un archivo __init__.py (por el momento vacío) para que Python entienda que se trata de un paquete y no de una simple carpeta. Así, podemos acceder a alguno de los módulos del paquete de la siguiente manera.',
+                              'Tambien tenemos la opcion de instalar un grupo de paquetes, tomando como el ejemplo el archivo "requirements.txt", que define las dependencias de la aplicación, pueden ser instaladas todas ejecutando.',
                               style: TextStyle(
                                   fontFamily: 'PatuaOne', fontSize: 24),
                               textAlign: TextAlign.justify,
                             ),
-                            Text(''),
                             Image.network(
-                                'https://i.postimg.cc/K8kT98ms/Shared-Screenshot.jpg'),
+                                'https://i.postimg.cc/N05XVstn/2.jpg'),
                             Text(''),
                             Text(
-                              'Python incluye una inmensa cantidad de módulos y paquetes en su instalación (aún más grande es aquella desarrollada por la comunidad, de la que hablaremos más adelante), a los que se conoce como librería estándar. Ahora que sabemos cómo trabajar con ellos',
+                              'Ubicación de los paquetes instalados',
+                              style: TextStyle(
+                                  fontFamily: 'PatuaOne', fontSize: 38),
+                              textAlign: TextAlign.justify,
+                            ),
+                            Text(''),
+                            Text(
+                              'Todo paquete que instales usando pip se instalará y almacenará en el directorio .local de tu hosting. De la misma forma, cualquier binario o ejecutable incluido en un paquete que hayas instalado, se ubicará en .local/bin .',
                               style: TextStyle(
                                   fontFamily: 'PatuaOne', fontSize: 24),
                               textAlign: TextAlign.justify,
                             ),
+                            Text(''),
                             Text('\n\n'),
                             Text(
                               'Micro Test\n',
