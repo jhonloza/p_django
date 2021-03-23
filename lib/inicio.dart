@@ -6,12 +6,18 @@ import 'package:p_django/unidad1/tema1.dart';
 import 'package:p_django/unidad2/tema1.dart';
 import 'package:p_django/unidad2/tema2.dart';
 import 'package:p_django/unidad2/tema3.dart';
+import 'package:p_django/unidad2/tema4.dart';
+import 'package:p_django/unidad2/tema5.dart';
+import 'package:p_django/unidad2/tema6.dart';
 
 class Inicio extends StatelessWidget {
   TemaI t11 = new TemaI();
   Tema21 t21 = new Tema21();
   Tema22 t22 = new Tema22();
   Tema23 t23 = new Tema23();
+  Tema24 t24 = new Tema24();
+  Tema25 t25 = new Tema25();
+  Tema26 t26 = new Tema26();
 
   @override
   Widget build(BuildContext context) {
@@ -356,7 +362,12 @@ class Inicio extends StatelessWidget {
                       new Expanded(
                         child: Container(
                           child: FlatButton(
-                              onPressed: null,
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => t24));
+                              },
                               child: Image.asset(
                                 'assets/images/tema2/tema24.png',
                                 height: 100,
@@ -396,7 +407,12 @@ class Inicio extends StatelessWidget {
                       new Expanded(
                         child: Container(
                           child: FlatButton(
-                              onPressed: null,
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => t25));
+                              },
                               child: Image.asset(
                                 'assets/images/tema2/tema25.png',
                                 height: 100,
@@ -423,7 +439,12 @@ class Inicio extends StatelessWidget {
                       new Expanded(
                         child: Container(
                           child: FlatButton(
-                              onPressed: null,
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => t26));
+                              },
                               child: Image.asset(
                                 'assets/images/tema2/tema26.png',
                                 height: 100,
