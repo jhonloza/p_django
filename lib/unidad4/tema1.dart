@@ -14,7 +14,7 @@ class Tema41 extends StatelessWidget {
       home: Scaffold(
         appBar: Header(
           title: Text(
-            'Unidad 2, Tema 1',
+            'Unidad 4, Tema 1',
             style: TextStyle(
               fontFamily: 'PatuaOne',
               fontWeight: FontWeight.bold,
@@ -35,7 +35,7 @@ class Tema41 extends StatelessWidget {
                     children: [
                       new Text(''),
                       new Text(
-                        'PAQUETES EN PYTHON DJANGO',
+                        'MULTIMEDIA, TURTLE Y JSON2JSON  EN PYTHON',
                         style: TextStyle(
                           fontFamily: 'PatuaOne',
                           fontSize: 38,
@@ -47,9 +47,9 @@ class Tema41 extends StatelessWidget {
                         child: Column(
                           children: [
                             Text(
-                              'Un paquete es una carpeta que contiene varios módulos. Siguiendo el ejemplo anterior, podemos diseñar un paquete matematica creando una carpeta con la siguiente estructura.',
+                              'MULTIMEDIA',
                               style: TextStyle(
-                                  fontFamily: 'PatuaOne', fontSize: 24),
+                                  fontFamily: 'PatuaOne', fontSize: 38),
                               textAlign: TextAlign.justify,
                             ),
                             Text(''),

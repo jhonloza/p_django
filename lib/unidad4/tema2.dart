@@ -14,7 +14,7 @@ class Tema42 extends StatelessWidget {
       home: Scaffold(
         appBar: Header(
           title: Text(
-            'Unidad 2, Tema 2',
+            'Unidad 4, Tema 2',
             style: TextStyle(
               fontFamily: 'PatuaOne',
               fontWeight: FontWeight.bold,
@@ -35,7 +35,7 @@ class Tema42 extends StatelessWidget {
                     children: [
                       new Text(''),
                       new Text(
-                        'PyPI EN PYTHON DJANGO',
+                        'MULTIMEDIA, \n TURTLE \n Y JSON2JSON',
                         style: TextStyle(
                           fontFamily: 'PatuaOne',
                           fontSize: 38,
@@ -47,30 +47,55 @@ class Tema42 extends StatelessWidget {
                         child: Column(
                           children: [
                             Text(
-                              '',
+                              'MULTIMEDIA PYTHON',
                               style: TextStyle(
-                                  fontFamily: 'PatuaOne', fontSize: 24),
+                                  fontFamily: 'PatuaOne', fontSize: 38),
                               textAlign: TextAlign.justify,
                             ),
                             Text(''),
                             Text(
-                              'PYPI siendo su significado "PYTHON ´PACKAGE INDEX" o en español indice de paquetes de Python, es el repositorio de software oficial para aplicaciones de terceros en el lenguaje de programación Python. ',
+                              'Hay numerosas bibliotecas multimedia para las que hay enlaces de Python disponibles. Estas bibliotecas permiten trabajar con diferentes tipos de medios, como imágenes, audio, vídeo, juegos. ',
                               style: TextStyle(
                                   fontFamily: 'PatuaOne', fontSize: 24),
                               textAlign: TextAlign.justify,
                             ),
                             Image.network(
-                                'https://i.postimg.cc/7YpCQhSR/Py-Pi-paquetes-malware-disponible.png'),
+                                'https://i.postimg.cc/MHV1TTnr/Captura-de-pantalla-2021-03-24-112716.jpg'),
                             Text(''),
                             Text(
-                              'PyPI le ayuda a encontrar e instalar software desarrollado y compartido por la comunidad de Python.',
+                              'TURTLE PYTHON.',
+                              style: TextStyle(
+                                  fontFamily: 'PatuaOne', fontSize: 38),
+                              textAlign: TextAlign.justify,
+                            ),
+                            Text(''),
+                            Text(
+                              'Módulo de programación gráfica para Python utilizado como método para enseñar programación a través de coordenadas relativas. El objeto a programar recibe el nombre de tortuga, elemento clave en el lenguaje de programación Logo, creado por Seymour Papert a finales de la década de los 60.',
                               style: TextStyle(
                                   fontFamily: 'PatuaOne', fontSize: 24),
                               textAlign: TextAlign.justify,
                             ),
                             Text(''),
                             Image.network(
-                                'https://pypi.org/static/images/logo-large.72ad8bf1.svg'),
+                                'https://i.postimg.cc/pLqVHZ1m/u4xk1bxw4jp9py47qpv3.png'),
+                            Text(''),
+                            Text(''),
+                            Text(
+                              'json2json en PYTHON.',
+                              style: TextStyle(
+                                  fontFamily: 'PatuaOne', fontSize: 38),
+                              textAlign: TextAlign.justify,
+                            ),
+                            Text(''),
+                            Text(
+                              'Es un formato de intercambio de datos ligero. Es fácil para los humanos leer y escribir. Es fácil para las máquinas analizar y generar. ',
+                              style: TextStyle(
+                                  fontFamily: 'PatuaOne', fontSize: 24),
+                              textAlign: TextAlign.justify,
+                            ),
+                            Text(''),
+                            Image.network(
+                                'https://i.postimg.cc/CKwNZjYT/Captura-de-pantalla-2021-03-24-114728.jpg'),
                             Text(''),
                             Text('\n\n'),
                             Text(

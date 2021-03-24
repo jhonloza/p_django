@@ -14,7 +14,7 @@ class Tema43 extends StatelessWidget {
       home: Scaffold(
         appBar: Header(
           title: Text(
-            'Unidad 2, Tema 3',
+            'Unidad 4, Tema 3',
             style: TextStyle(
               fontFamily: 'PatuaOne',
               fontWeight: FontWeight.bold,
@@ -35,7 +35,7 @@ class Tema43 extends StatelessWidget {
                     children: [
                       new Text(''),
                       new Text(
-                        'Instalación de paquetes',
+                        'Creando Recursos Multimedia',
                         style: TextStyle(
                           fontFamily: 'PatuaOne',
                           fontSize: 38,
@@ -47,37 +47,32 @@ class Tema43 extends StatelessWidget {
                         child: Column(
                           children: [
                             Text(
-                              'Para instalar un paquete cualquiera debes ejecutar el comando pip de la siguiente manera:',
+                              'El utilizar recursos multimedia con cual poder interactuar son de gran ayuda al momento de poder desarrollar diferentes aplicativos a través de Python Django, por lo cual existen módulos que son de gran ayuda al momento de realizar un proyecto.',
                               style: TextStyle(
                                   fontFamily: 'PatuaOne', fontSize: 24),
                               textAlign: TextAlign.justify,
                             ),
                             Text(''),
                             Image.network(
-                                'https://i.postimg.cc/TwQjnLYK/1-Shared-Screenshot.jpg'),
+                                'https://i.postimg.cc/VknX14SB/Captura-de-pantalla-2021-03-24-121540.jpg'),
                             Text(''),
                             Text(
-                              'Tambien tenemos la opcion de instalar un grupo de paquetes, tomando como el ejemplo el archivo "requirements.txt", que define las dependencias de la aplicación, pueden ser instaladas todas ejecutando.',
+                              'Para su defecto utilizaremos el ejemplo práctico de  poder determinar el tipo de imagen \n ',
                               style: TextStyle(
                                   fontFamily: 'PatuaOne', fontSize: 24),
                               textAlign: TextAlign.justify,
                             ),
+                            Text(''),
+                            Text(
+                              'imghdr.what(filename, h=None), \n Comprueba los datos de imagen contenidos en el archivo mencionado en filename y retorna una cadena de caracteres que describe el tipo de imagen. Si se proporciona el argumento opcional h, se ignora filename y se supone que h contiene la secuencia de bytes que se va a analizar.',
+                              style: TextStyle(
+                                  fontFamily: 'PatuaOne', fontSize: 24),
+                              textAlign: TextAlign.justify,
+                            ),
+                            Text(''),
                             Image.network(
-                                'https://i.postimg.cc/N05XVstn/2.jpg'),
+                                'https://i.postimg.cc/MTQnbpy0/Captura-de-pantalla-2021-03-24-121831.jpg'),
                             Text(''),
-                            Text(
-                              'Ubicación de los paquetes instalados',
-                              style: TextStyle(
-                                  fontFamily: 'PatuaOne', fontSize: 38),
-                              textAlign: TextAlign.justify,
-                            ),
-                            Text(''),
-                            Text(
-                              'Todo paquete que instales usando pip se instalará y almacenará en el directorio .local de tu hosting. De la misma forma, cualquier binario o ejecutable incluido en un paquete que hayas instalado, se ubicará en .local/bin .',
-                              style: TextStyle(
-                                  fontFamily: 'PatuaOne', fontSize: 24),
-                              textAlign: TextAlign.justify,
-                            ),
                             Text(''),
                             Text('\n\n'),
                             Text(

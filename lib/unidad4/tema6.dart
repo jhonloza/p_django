@@ -14,7 +14,7 @@ class Tema46 extends StatelessWidget {
       home: Scaffold(
         appBar: Header(
           title: Text(
-            'Unidad 2, Tema 6',
+            'Unidad 4, Tema 6',
             style: TextStyle(
               fontFamily: 'PatuaOne',
               fontWeight: FontWeight.bold,
