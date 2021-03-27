@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 
 import 'package:p_django/templates/header.dart';
 import 'package:p_django/templates/leftmenu.dart';
+import 'package:p_django/unidad1/test/test1.dart';
 
 class TemaI extends StatelessWidget{
+  Test1 test = new Test1();
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
@@ -80,7 +82,7 @@ class TemaI extends StatelessWidget{
                               style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
                               textAlign: TextAlign.justify,
                             ),
-                            Image.network('https://entrenamiento-python-basico.readthedocs.io/es/latest/_images/PyCon_US_2018_BrettKeynote.png'),
+                            //Image.network('https://entrenamiento-python-basico.readthedocs.io/es/latest/_images/PyCon_US_2018_BrettKeynote.png'),
                             Text('\n\n'),
                             Text('Micro Test\n',
                               style: TextStyle(
@@ -90,9 +92,12 @@ class TemaI extends StatelessWidget{
                               textAlign: TextAlign.center,
                             ),
                             TextButton(
-                              onPressed: (){
-
-                              }, 
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => test));
+                              },
                               child: Container(
                                 width: screenWidth-130,
                                 color: Colors.yellow.shade700,
