@@ -2,10 +2,9 @@ import 'package:flutter/material.dart';
 
 import 'package:p_django/templates/header.dart';
 import 'package:p_django/templates/leftmenu.dart';
-import 'package:p_django/unidad1/test/test1.dart';
 
-class Tema11 extends StatelessWidget{
-  Test1 test = new Test1();
+class Tema31 extends StatelessWidget{
+  
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
@@ -16,7 +15,7 @@ class Tema11 extends StatelessWidget{
       home: Scaffold(
         appBar: Header(
           title: Text(
-            'Unidad I, Tema 1',
+            'Unidad III, Tema 1',
             style: TextStyle(
               fontFamily: 'PatuaOne',
               fontWeight: FontWeight.bold,
@@ -57,7 +56,7 @@ class Tema11 extends StatelessWidget{
                   ),
                   Column(
                     children: [
-                      new Text('¿QUE ES PYTHON?',
+                      new Text('DJANGO',
                         style: TextStyle(
                           fontFamily: 'PatuaOne',
                           fontSize: 38,
@@ -69,17 +68,12 @@ class Tema11 extends StatelessWidget{
                         child: Column(
                           children: [
                             Text(
-                              'Python es un lenguaje de programacion, este lenguaje fue creado a principios de los noventa por Guido van Rossum en los Países Bajos.',
+                              'Debido a que Django fue desarrollado en un ambiente de sala de redacción de ritmo rápido, fue diseñado para hacer tareas comunes de desarrollo web de forma rápida y fácil. Aquí se incluye una introducción informal de cómo escribir una aplicación web que utiliza una base de datos con Django.\n',
                               style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
                               textAlign: TextAlign.justify,
                             ),
-                            Image.network('https://upload.wikimedia.org/wikipedia/commons/6/66/Guido_van_Rossum_OSCON_2006.jpg'),
-                            Text(
-                              'Es relativamente joven (Fortran 1957, Pascal 1970, C 1972, Modula-2 1978, Java 1991). Toma características de lenguajes predecesores, incluso, compatibilizando la solución de varios de ellos. Por ejemplo, habilita tres formas de imprimir el valor de una variable: desde el entorno interactivo escribiendo su nombre (como en Basic), usando la función print, con concatenación de elementos (al estilo del write de Pascal) o bien con patrones de formato (al estilo del printf de C).\n\nEs software libre, y está implementado en todas las plataformas y sistemas operativos habituales.\n\n',
-                              style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
-                              textAlign: TextAlign.justify,
-                            ),
-                            Text('Python Software Foundation',
+                            Image.network('https://i.ibb.co/Pmv1C0R/image.png'),
+                            Text('Aplicaciones Web Basadas en Django y Python',
                               style: TextStyle(
                                 fontFamily: 'PatuaOne',
                                 fontSize: 38,
@@ -87,11 +81,11 @@ class Tema11 extends StatelessWidget{
                               textAlign: TextAlign.center,
                             ),
                             Text(
-                              '\nLa Python Software Foundation (PSF) es una corporación sin fines de lucro 501 que posee los derechos de propiedad intelectual detrás del lenguaje de programación Python. Administramos las licencias de código abierto para Python versión 2.1 y posteriores, y poseemos y protegemos las marcas comerciales asociadas con Python.\n\n',
+                              '''\nDjango es un framework de aplicaciones web gratuito y de código abierto, el cual tiene muchas características que lo hacen especial, cuenta con varios componentes internos, con los que se puede desarrollar un sitio web escalable, y por supuesto si quieres agregar alguna funcionalidad extra, seguramente existe un paquete que lo realiza, también por estar escrito en Python, nos da acceso a todas las librerías disponibles y así poderlas integrar a nuestro código de manera sencilla, esta combinación de Python Django permite desarrollar muy rápido para la web.\n\n''',
                               style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
                               textAlign: TextAlign.justify,
                             ),
-                            Text('Su Comunidad',
+                            Text('Componentes principales',
                               style: TextStyle(
                                 fontFamily: 'PatuaOne',
                                 fontSize: 38,
@@ -99,11 +93,26 @@ class Tema11 extends StatelessWidget{
                               textAlign: TextAlign.center,
                             ),
                             Text(
-                              '\nEl gran software es soportado por grandes personas. La base de usuarios es entusiasta, dedicada a fomentar el uso del lenguaje y comprometida a que sea diversa y amigable.\n\n',
+                              '''\nEl Administrador: Es autogenerado, permite personalizarse de forma sencilla y cuenta con opciones avanzadas.
+
+ORM: Es lo que permite facilitar la conexión con la base de datos, puede optimizarse y permite consultas avanzadas, este soporta múltiples motores de base de datos y algunos de ellos extienden funcionalidades extra como por ejemplo Postgresql e incluso PostGIS que es una extension para manejo de base de datos geográficas.\n\n''',
                               style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
                               textAlign: TextAlign.justify,
                             ),
-                            Image.network('https://4.bp.blogspot.com/-17dwurGf3-0/Wc0YjqSyMPI/AAAAAAAABng/j4yYDf8gTm4tYYnsjGu4i3xdgz8CZ6jhwCLcBGAs/s1600/IMG_0811.jpg'),
+                            Image.network('https://i.ibb.co/Dtc152g/image.png'),
+                            Text('Estructura MVC de Django',
+                              style: TextStyle(
+                                fontFamily: 'PatuaOne',
+                                fontSize: 38,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                            Text(
+                              '\nLas aplicaciones web de Django normalmente agrupan el código que gestiona cada uno de estos pasos en ficheros separados:\n\n',
+                              style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
+                              textAlign: TextAlign.justify,
+                            ),
+                            Image.network('https://i.ibb.co/jrsb445/image.png'),
                             Text('\n\n'),
                             Text('Micro Test\n',
                               style: TextStyle(
@@ -113,12 +122,12 @@ class Tema11 extends StatelessWidget{
                               textAlign: TextAlign.center,
                             ),
                             TextButton(
-                              onPressed: () {
+                              onPressed: null, /*() {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
                                         builder: (context) => test));
-                              },
+                              },*/
                               child: Container(
                                 width: screenWidth-130,
                                 color: Colors.yellow.shade700,

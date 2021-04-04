@@ -28,12 +28,33 @@ class Tema46 extends StatelessWidget {
               color: Colors.lightBlue.shade100,
               child: Row(
                 children: [
+                  TextButton(
+                    onPressed: (){
+                      Navigator.pop(context);
+                    },
+                    child: Image(
+                      image: AssetImage('assets/images/atras.png'),
+                      height: 75,
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(),
+                  ),
+                  Expanded(
+                    child: Container(),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              color: Colors.lightBlue.shade100,
+              child: Row(
+                children: [
                   Expanded(
                     child: Container(),
                   ),
                   Column(
                     children: [
-                      new Text(''),
                       new Text(
                         'Servicio Web con PyPI',
                         style: TextStyle(
