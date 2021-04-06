@@ -2,11 +2,15 @@ import 'package:flutter/material.dart';
 
 class Formulario extends StatefulWidget {
   final String pregunta, o1,o2,o3,o4; // receives the value
-
-  Formulario({ Key key, this.pregunta, this.o1, this.o2, this.o3, this.o4}): super(key: key);
+  String grupo;
+  Formulario({ Key key, this.pregunta, this.o1, this.o2, this.o3, this.o4, this.grupo}): super(key: key);
 
   @override
   _FormularioState createState() => _FormularioState();
+
+  void setGrupo(String ngrupo){
+    this.grupo = ngrupo;
+  }
 }
 
 class _FormularioState extends State<Formulario> {
@@ -20,6 +24,7 @@ class _FormularioState extends State<Formulario> {
   cambioSeleccion(String val){
     setState(() {
       grupoSeleccion = val;
+      widget.grupo=val;
     });
   }
   @override
