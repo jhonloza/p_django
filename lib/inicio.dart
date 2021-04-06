@@ -19,6 +19,11 @@ import 'package:p_django/unidad3/tema1.dart';
 import 'package:p_django/unidad3/tema2.dart';
 import 'package:p_django/unidad3/tema3.dart';
 import 'package:p_django/unidad3/tema4.dart';
+import 'package:p_django/unidad3/tema5.dart';
+import 'package:p_django/unidad3/tema6.dart';
+import 'package:p_django/unidad3/tema7.dart';
+import 'package:p_django/unidad3/tema8.dart';
+import 'package:p_django/unidad3/tema9.dart';
 import 'package:p_django/unidad4/tema1.dart';
 import 'package:p_django/unidad4/tema2.dart';
 import 'package:p_django/unidad4/tema3.dart';
@@ -45,7 +50,11 @@ class Inicio extends StatelessWidget {
   Tema32 t32 = new Tema32();
   Tema33 t33 = new Tema33();
   Tema34 t34 = new Tema34();
-
+  Tema35 t35 = new Tema35();
+  Tema36 t36 = new Tema36();
+  Tema37 t37 = new Tema37();
+  Tema38 t38 = new Tema38();
+  Tema39 t39 = new Tema39();
   Tema41 t41 = new Tema41();
   Tema42 t42 = new Tema42();
   Tema43 t43 = new Tema43();
@@ -705,7 +714,12 @@ class Inicio extends StatelessWidget {
                       new Expanded(
                         child: Container(
                           child: FlatButton(
-                              onPressed: null,
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => t35));
+                              },
                               child: Image.asset(
                                 'assets/images/tema3/tema35.png',
                                 height: 100,
@@ -716,7 +730,12 @@ class Inicio extends StatelessWidget {
                       new Expanded(
                         child: Container(
                           child: FlatButton(
-                              onPressed: null,
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => t36));
+                              },
                               child: Image.asset(
                                 'assets/images/tema3/tema36.png',
                                 height: 100,
@@ -756,7 +775,12 @@ class Inicio extends StatelessWidget {
                       new Expanded(
                         child: Container(
                           child: FlatButton(
-                              onPressed: null,
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => t37));
+                              },
                               child: Image.asset(
                                 'assets/images/tema3/tema37.png',
                                 height: 100,
@@ -783,7 +807,12 @@ class Inicio extends StatelessWidget {
                       new Expanded(
                         child: Container(
                           child: FlatButton(
-                              onPressed: null,
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => t38));
+                              },
                               child: Image.asset(
                                 'assets/images/tema3/tema38.png',
                                 height: 100,
@@ -794,7 +823,12 @@ class Inicio extends StatelessWidget {
                       new Expanded(
                         child: Container(
                           child: FlatButton(
-                              onPressed: null,
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => t39));
+                              },
                               child: Image.asset(
                                 'assets/images/tema3/tema39.png',
                                 height: 100,

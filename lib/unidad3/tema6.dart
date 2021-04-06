@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:p_django/templates/header.dart';
 import 'package:p_django/templates/leftmenu.dart';
 
-class Tema31 extends StatelessWidget{
+class Tema36 extends StatelessWidget{
   
   @override
   Widget build(BuildContext context) {
@@ -29,13 +29,35 @@ class Tema31 extends StatelessWidget{
               color: Colors.lightBlue.shade100,
               child: Row(
                 children: [
+                  TextButton(
+                    onPressed: (){
+                      Navigator.pop(context);
+                    },
+                    child: Image(
+                      image: AssetImage('assets/images/atras.png'),
+                      height: 75,
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(),
+                  ),
+                  Expanded(
+                    child: Container(),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              color: Colors.lightBlue.shade100,
+              child: Row(
+                children: [
                   Expanded(
                     child: Container(),
                   ),
                   Column(
                     children: [
                       new Text(''),
-                      new Text('Fundamentos Basicos en Python',
+                      new Text('Consumo de Datos y recursos',
                         style: TextStyle(
                           fontFamily: 'PatuaOne',
                           fontSize: 38,
@@ -47,27 +69,11 @@ class Tema31 extends StatelessWidget{
                         child: Column(
                           children: [
                             Text(
-                              'La sintaxis de Python es extremadamente "limpia", no se requiere de ningún caracter que indique el final de una secuencia y los bloques se definen a través de la indentación del código. Los comentarios de una sola línea se definen con el carácter almohadilla (#) y las cadenas de multiples líneas (""") se suelen emplear para escribir comentarios multilínea.\n',
+                              'Para el consumo de datos y recursos en Django implementaremos la api personalizada de Django q nos ofrece al utilizar una conexion con la base de datos, una vez realizada la conexion establecido por la base de datos crearemos nuestros modelos en el archivo models.py de la aplicacion.\n',
                               style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
                               textAlign: TextAlign.justify,
                             ),
-                            Text('Operadores',
-                              style: TextStyle(
-                                fontFamily: 'PatuaOne',
-                                fontSize: 38,
-                              ),
-                              textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              '''\nLos operadores aritméticos +, - y / significan en Python lo mismo que en matemáticas. El asterisco (*) es el símbolo para la multiplicación, el % se usa para obtener el módulo, // para división entera y ** es el símbolo para las potencias. También disponemos de los operadores incrementar (+=) y decrementar (-=).
-
-Existen tres operadores lógicos: and, or, y not. La semántica (significado) de estos operadores es similar a sus significados en inglés (en español “y”, “o” y “no”).
-
-La asignación de valores, como en la mayoría de lenguajes, se realiza con el símbolo "igual" (=). La doble igualdad (==) se usa para comprobar que dos valores son iguales, además disponemos de estos operadores de comparación: distinto que (!=), mayor que (>), menor que (<), mayor o igual (>=) y menor o igual (<=)..\n\n''',
-                              style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
-                              textAlign: TextAlign.justify,
-                            ),
-                            Image.network('https://i.ibb.co/NKVKgVS/image.png'),
+                            Image.network('https://i.ibb.co/QHb4q31/image.png'),
                             Text('Tipos de Datos',
                               style: TextStyle(
                                 fontFamily: 'PatuaOne',
@@ -76,25 +82,22 @@ La asignación de valores, como en la mayoría de lenguajes, se realiza con el s
                               textAlign: TextAlign.center,
                             ),
                             Text(
-                              '\nLos tipos de datos básicos en Python son los numéricos formados por enteros, los reales y los complejos; las cadenas de texto y los booleanos. La función type nos devuelve el tipo:.\n\n',
+                              '''\nUna vez creado ejecutaremos eo comando "python manage.py makemigrations myapp", en cual hara la conexion con la base y creara las tablas con sus respectivas numeraciones, primary_key y Foreaign_key si fuese el caso de tablas relacionadas
+
+de igual manera antes de ejecutar nuestro comando SQL dentrod e la base podemos observar con el comando "python manage.py sqlmigrate myapp 0001" la creacion del archivo sql para ingresar a la base de datos\n\n''',
                               style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
                               textAlign: TextAlign.justify,
                             ),
-                            Image.network('https://i.ibb.co/Q93Gj55/image.png'),
-                            Text('Estructuras de control de flujo',
+                            Image.network('https://i.ibb.co/h8WvPVp/image.png'),
+                            Text('Una vez comprobado todo podremos hacer la creacion con el comando "python manage.py migrate" el cual nos dara el siguiente resultado',
                               style: TextStyle(
                                 fontFamily: 'PatuaOne',
                                 fontSize: 38,
                               ),
                               textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              '\nLas sentencias de control de flujo, son bloques de código en los que se agrupan instrucciones de manera controlada. Por un lado tenemos las estruturas condicionales (if, if .. else, if ..elif ..else) y por otro las estructuras iterativas (for, while).\n\n',
-                              style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
-                              textAlign: TextAlign.justify,
                             ),
                             Image.network('https://i.ibb.co/RcnF6fY/image.png'),
-                            Text('Funciones',
+                            Text('Implementando API Django',
                               style: TextStyle(
                                 fontFamily: 'PatuaOne',
                                 fontSize: 38,
@@ -102,16 +105,18 @@ La asignación de valores, como en la mayoría de lenguajes, se realiza con el s
                               textAlign: TextAlign.center,
                             ),
                             Text(
-                              '\nUna función no es más que un bloque de código reutilizable encargado de realizar una determinada tarea. Para definir una función en Python debemos utilizar la palabra reservada "def" seguido del nombre de la función y los parámetros los indicamos entre parentesis.\n\n',
+                              '\nPara el consumo de nuestros datos desde la base vamos a utilizar la api integrada de django con el modelo diseñado en la aplicacion para mostrar los diferentes datos dentro de la misma\n\n',
                               style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
                               textAlign: TextAlign.justify,
                             ),
+                            Image.network('https://i.ibb.co/9vs4j4d/image.png'),
                             Text(
-                              '\nEn el ejemplo anterior hemos visto varias formas de definir y ejecutar a las funciones en Python, ya sea con parámetros por con valores por defecto o keywords como argumentos. Nos faltaría ver como llamarlas con colecciones como argumentos, una forma muy común de pasar valores a las funciones en Python, y que en muchas ocasiones cuesta entender. Para ello debemos tener claro que las tupla como colección de argumentos se define con *args y el diccionario con **kwargs.\n\n',
+                              '\nDe igual manera para corregir salidas de informacion modificaremos en el modelo la salida de string para q nos de el resultado y no el objeto como tal, asi como un valor de fecha mas valido para la aplicacion web y no lo que nos devuelve de la base de datos.\n\n',
                               style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
                               textAlign: TextAlign.justify,
                             ),
-                            Image.network('https://i.ibb.co/v1pk9H9/image.png'),
+                            Image.network('https://i.ibb.co/mNGRB7G/image.png'),
+                            Image.network('https://i.ibb.co/K5qD6r0/image.png'),
                             Text('\n\n'),
                             Text('Micro Test\n',
                               style: TextStyle(
