@@ -2,21 +2,20 @@ import 'package:flutter/material.dart';
 
 import 'package:p_django/templates/header.dart';
 import 'package:p_django/templates/leftmenu.dart';
-import 'package:p_django/unidad1/test/test1.dart';
 
-class Tema11 extends StatelessWidget{
-  Test1 test = new Test1();
+class Tema38 extends StatelessWidget{
+  
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
     final screenWidth = screenSize.width;
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Tema 1',
+      title: 'Tema 8',
       home: Scaffold(
         appBar: Header(
           title: Text(
-            'Unidad I, Tema 1',
+            'Unidad III, Tema 8',
             style: TextStyle(
               fontFamily: 'PatuaOne',
               fontWeight: FontWeight.bold,
@@ -57,7 +56,8 @@ class Tema11 extends StatelessWidget{
                   ),
                   Column(
                     children: [
-                      new Text('¿QUE ES PYTHON?',
+                      new Text(''),
+                      new Text('Servicios Json y Restful',
                         style: TextStyle(
                           fontFamily: 'PatuaOne',
                           fontSize: 38,
@@ -69,17 +69,11 @@ class Tema11 extends StatelessWidget{
                         child: Column(
                           children: [
                             Text(
-                              'Python es un lenguaje de programacion, este lenguaje fue creado a principios de los noventa por Guido van Rossum en los Países Bajos.',
+                              'Dentro de la api propia de Django puede generar las consultas de la base de datos, asi como tomar desde los servicios que puede realizarse externamente creando servicios Json y Rest para consumir dichos servicios.\n',
                               style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
                               textAlign: TextAlign.justify,
                             ),
-                            Image.network('https://upload.wikimedia.org/wikipedia/commons/6/66/Guido_van_Rossum_OSCON_2006.jpg'),
-                            Text(
-                              'Es relativamente joven (Fortran 1957, Pascal 1970, C 1972, Modula-2 1978, Java 1991). Toma características de lenguajes predecesores, incluso, compatibilizando la solución de varios de ellos. Por ejemplo, habilita tres formas de imprimir el valor de una variable: desde el entorno interactivo escribiendo su nombre (como en Basic), usando la función print, con concatenación de elementos (al estilo del write de Pascal) o bien con patrones de formato (al estilo del printf de C).\n\nEs software libre, y está implementado en todas las plataformas y sistemas operativos habituales.\n\n',
-                              style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
-                              textAlign: TextAlign.justify,
-                            ),
-                            Text('Python Software Foundation',
+                            Text('Servicio Rest y json',
                               style: TextStyle(
                                 fontFamily: 'PatuaOne',
                                 fontSize: 38,
@@ -87,23 +81,64 @@ class Tema11 extends StatelessWidget{
                               textAlign: TextAlign.center,
                             ),
                             Text(
-                              '\nLa Python Software Foundation (PSF) es una corporación sin fines de lucro 501 que posee los derechos de propiedad intelectual detrás del lenguaje de programación Python. Administramos las licencias de código abierto para Python versión 2.1 y posteriores, y poseemos y protegemos las marcas comerciales asociadas con Python.\n\n',
+                              '''\nSe ejecutara la expocision de un API REST para manejar “customers” con Django y REST Framework.\n\n''',
                               style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
                               textAlign: TextAlign.justify,
                             ),
-                            Text('Su Comunidad',
+                            Text('Creacion del modelo',
                               style: TextStyle(
                                 fontFamily: 'PatuaOne',
                                 fontSize: 38,
                               ),
                               textAlign: TextAlign.center,
                             ),
-                            Text(
-                              '\nEl gran software es soportado por grandes personas. La base de usuarios es entusiasta, dedicada a fomentar el uso del lenguaje y comprometida a que sea diversa y amigable.\n\n',
-                              style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
-                              textAlign: TextAlign.justify,
+                            Image.network('https://i.ibb.co/1T4xh2y/image.png'),
+
+                            Text('Creacion de la vista',
+                              style: TextStyle(
+                                fontFamily: 'PatuaOne',
+                                fontSize: 38,
+                              ),
+                              textAlign: TextAlign.center,
                             ),
-                            Image.network('https://4.bp.blogspot.com/-17dwurGf3-0/Wc0YjqSyMPI/AAAAAAAABng/j4yYDf8gTm4tYYnsjGu4i3xdgz8CZ6jhwCLcBGAs/s1600/IMG_0811.jpg'),
+                            Image.network('https://i.ibb.co/nM5H5Pn/image.png'),
+
+                            Text('Enlace con la URLs',
+                              style: TextStyle(
+                                fontFamily: 'PatuaOne',
+                                fontSize: 38,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                            Image.network('https://i.ibb.co/Gsd0DZX/image.png'),
+
+                            Text('Generacion de seriales para la base de datos',
+                              style: TextStyle(
+                                fontFamily: 'PatuaOne',
+                                fontSize: 38,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                            Image.network('https://i.ibb.co/rHZzSkD/image.png'),
+
+                            Text('Creacion de test y aplicacion',
+                              style: TextStyle(
+                                fontFamily: 'PatuaOne',
+                                fontSize: 38,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                            Image.network('https://i.ibb.co/G2m4QnL/image.png'),
+                            
+
+                            Text('Muestra del servicio Rest y generacion de un api Json integrada',
+                              style: TextStyle(
+                                fontFamily: 'PatuaOne',
+                                fontSize: 38,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                            Image.network('https://i.ibb.co/xMf4fJs/image.png'),
                             Text('\n\n'),
                             Text('Micro Test\n',
                               style: TextStyle(
@@ -113,12 +148,12 @@ class Tema11 extends StatelessWidget{
                               textAlign: TextAlign.center,
                             ),
                             TextButton(
-                              onPressed: () {
+                              onPressed: null, /*() {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
                                         builder: (context) => test));
-                              },
+                              },*/
                               child: Container(
                                 width: screenWidth-130,
                                 color: Colors.yellow.shade700,

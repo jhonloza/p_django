@@ -2,21 +2,20 @@ import 'package:flutter/material.dart';
 
 import 'package:p_django/templates/header.dart';
 import 'package:p_django/templates/leftmenu.dart';
-import 'package:p_django/unidad1/test/test1.dart';
 
-class Tema11 extends StatelessWidget{
-  Test1 test = new Test1();
+class Tema36 extends StatelessWidget{
+  
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
     final screenWidth = screenSize.width;
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Tema 1',
+      title: 'Tema 3',
       home: Scaffold(
         appBar: Header(
           title: Text(
-            'Unidad I, Tema 1',
+            'Unidad I, Tema 3',
             style: TextStyle(
               fontFamily: 'PatuaOne',
               fontWeight: FontWeight.bold,
@@ -57,7 +56,8 @@ class Tema11 extends StatelessWidget{
                   ),
                   Column(
                     children: [
-                      new Text('¿QUE ES PYTHON?',
+                      new Text(''),
+                      new Text('Consumo de Datos y recursos',
                         style: TextStyle(
                           fontFamily: 'PatuaOne',
                           fontSize: 38,
@@ -69,17 +69,12 @@ class Tema11 extends StatelessWidget{
                         child: Column(
                           children: [
                             Text(
-                              'Python es un lenguaje de programacion, este lenguaje fue creado a principios de los noventa por Guido van Rossum en los Países Bajos.',
+                              'Para el consumo de datos y recursos en Django implementaremos la api personalizada de Django q nos ofrece al utilizar una conexion con la base de datos, una vez realizada la conexion establecido por la base de datos crearemos nuestros modelos en el archivo models.py de la aplicacion.\n',
                               style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
                               textAlign: TextAlign.justify,
                             ),
-                            Image.network('https://upload.wikimedia.org/wikipedia/commons/6/66/Guido_van_Rossum_OSCON_2006.jpg'),
-                            Text(
-                              'Es relativamente joven (Fortran 1957, Pascal 1970, C 1972, Modula-2 1978, Java 1991). Toma características de lenguajes predecesores, incluso, compatibilizando la solución de varios de ellos. Por ejemplo, habilita tres formas de imprimir el valor de una variable: desde el entorno interactivo escribiendo su nombre (como en Basic), usando la función print, con concatenación de elementos (al estilo del write de Pascal) o bien con patrones de formato (al estilo del printf de C).\n\nEs software libre, y está implementado en todas las plataformas y sistemas operativos habituales.\n\n',
-                              style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
-                              textAlign: TextAlign.justify,
-                            ),
-                            Text('Python Software Foundation',
+                            Image.network('https://i.ibb.co/QHb4q31/image.png'),
+                            Text('Tipos de Datos',
                               style: TextStyle(
                                 fontFamily: 'PatuaOne',
                                 fontSize: 38,
@@ -87,11 +82,22 @@ class Tema11 extends StatelessWidget{
                               textAlign: TextAlign.center,
                             ),
                             Text(
-                              '\nLa Python Software Foundation (PSF) es una corporación sin fines de lucro 501 que posee los derechos de propiedad intelectual detrás del lenguaje de programación Python. Administramos las licencias de código abierto para Python versión 2.1 y posteriores, y poseemos y protegemos las marcas comerciales asociadas con Python.\n\n',
+                              '''\nUna vez creado ejecutaremos eo comando "python manage.py makemigrations myapp", en cual hara la conexion con la base y creara las tablas con sus respectivas numeraciones, primary_key y Foreaign_key si fuese el caso de tablas relacionadas
+
+de igual manera antes de ejecutar nuestro comando SQL dentrod e la base podemos observar con el comando "python manage.py sqlmigrate myapp 0001" la creacion del archivo sql para ingresar a la base de datos\n\n''',
                               style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
                               textAlign: TextAlign.justify,
                             ),
-                            Text('Su Comunidad',
+                            Image.network('https://i.ibb.co/h8WvPVp/image.png'),
+                            Text('Una vez comprobado todo podremos hacer la creacion con el comando "python manage.py migrate" el cual nos dara el siguiente resultado',
+                              style: TextStyle(
+                                fontFamily: 'PatuaOne',
+                                fontSize: 38,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                            Image.network('https://i.ibb.co/RcnF6fY/image.png'),
+                            Text('Implementando API Django',
                               style: TextStyle(
                                 fontFamily: 'PatuaOne',
                                 fontSize: 38,
@@ -99,11 +105,18 @@ class Tema11 extends StatelessWidget{
                               textAlign: TextAlign.center,
                             ),
                             Text(
-                              '\nEl gran software es soportado por grandes personas. La base de usuarios es entusiasta, dedicada a fomentar el uso del lenguaje y comprometida a que sea diversa y amigable.\n\n',
+                              '\nPara el consumo de nuestros datos desde la base vamos a utilizar la api integrada de django con el modelo diseñado en la aplicacion para mostrar los diferentes datos dentro de la misma\n\n',
                               style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
                               textAlign: TextAlign.justify,
                             ),
-                            Image.network('https://4.bp.blogspot.com/-17dwurGf3-0/Wc0YjqSyMPI/AAAAAAAABng/j4yYDf8gTm4tYYnsjGu4i3xdgz8CZ6jhwCLcBGAs/s1600/IMG_0811.jpg'),
+                            Image.network('https://i.ibb.co/9vs4j4d/image.png'),
+                            Text(
+                              '\nDe igual manera para corregir salidas de informacion modificaremos en el modelo la salida de string para q nos de el resultado y no el objeto como tal, asi como un valor de fecha mas valido para la aplicacion web y no lo que nos devuelve de la base de datos.\n\n',
+                              style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
+                              textAlign: TextAlign.justify,
+                            ),
+                            Image.network('https://i.ibb.co/mNGRB7G/image.png'),
+                            Image.network('https://i.ibb.co/K5qD6r0/image.png'),
                             Text('\n\n'),
                             Text('Micro Test\n',
                               style: TextStyle(
@@ -113,12 +126,12 @@ class Tema11 extends StatelessWidget{
                               textAlign: TextAlign.center,
                             ),
                             TextButton(
-                              onPressed: () {
+                              onPressed: null, /*() {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
                                         builder: (context) => test));
-                              },
+                              },*/
                               child: Container(
                                 width: screenWidth-130,
                                 color: Colors.yellow.shade700,

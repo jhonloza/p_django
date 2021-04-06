@@ -2,21 +2,20 @@ import 'package:flutter/material.dart';
 
 import 'package:p_django/templates/header.dart';
 import 'package:p_django/templates/leftmenu.dart';
-import 'package:p_django/unidad1/test/test1.dart';
 
-class Tema11 extends StatelessWidget{
-  Test1 test = new Test1();
+class Tema15 extends StatelessWidget{
+  
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
     final screenWidth = screenSize.width;
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Tema 1',
+      title: 'Tema 5',
       home: Scaffold(
         appBar: Header(
           title: Text(
-            'Unidad I, Tema 1',
+            'Unidad I, Tema 5',
             style: TextStyle(
               fontFamily: 'PatuaOne',
               fontWeight: FontWeight.bold,
@@ -57,7 +56,7 @@ class Tema11 extends StatelessWidget{
                   ),
                   Column(
                     children: [
-                      new Text('¿QUE ES PYTHON?',
+                      new Text('Herencias en Python',
                         style: TextStyle(
                           fontFamily: 'PatuaOne',
                           fontSize: 38,
@@ -69,17 +68,12 @@ class Tema11 extends StatelessWidget{
                         child: Column(
                           children: [
                             Text(
-                              'Python es un lenguaje de programacion, este lenguaje fue creado a principios de los noventa por Guido van Rossum en los Países Bajos.',
+                              'La herencia es una de las premisas y técnicas de la POO la cual permite a los programadores crear una clase general primero y luego más tarde crear clases más especializadas que re-utilicen código de la clase general. La herencia también le permite escribir un código más limpio y legible.\n',
                               style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
                               textAlign: TextAlign.justify,
                             ),
-                            Image.network('https://upload.wikimedia.org/wikipedia/commons/6/66/Guido_van_Rossum_OSCON_2006.jpg'),
-                            Text(
-                              'Es relativamente joven (Fortran 1957, Pascal 1970, C 1972, Modula-2 1978, Java 1991). Toma características de lenguajes predecesores, incluso, compatibilizando la solución de varios de ellos. Por ejemplo, habilita tres formas de imprimir el valor de una variable: desde el entorno interactivo escribiendo su nombre (como en Basic), usando la función print, con concatenación de elementos (al estilo del write de Pascal) o bien con patrones de formato (al estilo del printf de C).\n\nEs software libre, y está implementado en todas las plataformas y sistemas operativos habituales.\n\n',
-                              style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
-                              textAlign: TextAlign.justify,
-                            ),
-                            Text('Python Software Foundation',
+                            Image.network('https://i.ibb.co/gMjdkdY/image.png'),
+                            Text('Clase Base',
                               style: TextStyle(
                                 fontFamily: 'PatuaOne',
                                 fontSize: 38,
@@ -87,23 +81,43 @@ class Tema11 extends StatelessWidget{
                               textAlign: TextAlign.center,
                             ),
                             Text(
-                              '\nLa Python Software Foundation (PSF) es una corporación sin fines de lucro 501 que posee los derechos de propiedad intelectual detrás del lenguaje de programación Python. Administramos las licencias de código abierto para Python versión 2.1 y posteriores, y poseemos y protegemos las marcas comerciales asociadas con Python.\n\n',
+                              '''\nUse el diagrama anterior para ilustrar el concepto de la herencia, vea el caso de dos clases que tiene algo en común, ambas son personas, con atributos de datos personales y comportamiento típicos como hablar, comer, caminar, entonces para eso se crea una clase base llamada Persona. A continuación un ejemplo de la clase Persona con un método interno:\n\n''',
                               style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
                               textAlign: TextAlign.justify,
                             ),
-                            Text('Su Comunidad',
+                            Image.network('https://i.ibb.co/H7X2RCL/image.png'),
+                            Text(
+                              '''\nLa clase Persona tiene los métodos __init__, __str__, hablar y getGenero. Sus atributos son cedula, nombre, apellido y sexo.
+
+La instancia de dos nuevos objetos Persona seria de la siguiente forma:\n\n''',
+                              style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
+                              textAlign: TextAlign.justify,
+                            ),
+                            Image.network('https://i.ibb.co/QYwn0KN/image.png'),
+                            Text(
+                              '''\nEl método constructor __init__ es un método especial el cual debe escribir como: MiClase(parámetros iniciales si hay cualquiera).
+
+Usted puede llamar esos métodos y atributos con la siguiente notación: claseinstancia.metodo o claseinstancia.atributo.\n\n''',
+                              style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
+                              textAlign: TextAlign.justify,
+                            ),
+                            Image.network('https://i.ibb.co/y4j98MP/image.png'),
+                            Text('Diagramas de Herencia\n',
                               style: TextStyle(
                                 fontFamily: 'PatuaOne',
                                 fontSize: 38,
                               ),
                               textAlign: TextAlign.center,
                             ),
-                            Text(
-                              '\nEl gran software es soportado por grandes personas. La base de usuarios es entusiasta, dedicada a fomentar el uso del lenguaje y comprometida a que sea diversa y amigable.\n\n',
-                              style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
-                              textAlign: TextAlign.justify,
+                            Image.network('https://i.ibb.co/GcrBJZg/image.png'),
+                            Text('\nEl siguiente es un ejemplo de la clase Supervisor que derivada de la clase Persona con función interna:\n',
+                              style: TextStyle(
+                                fontFamily: 'PatuaOne',
+                                fontSize: 38,
+                              ),
+                              textAlign: TextAlign.center,
                             ),
-                            Image.network('https://4.bp.blogspot.com/-17dwurGf3-0/Wc0YjqSyMPI/AAAAAAAABng/j4yYDf8gTm4tYYnsjGu4i3xdgz8CZ6jhwCLcBGAs/s1600/IMG_0811.jpg'),
+                            Image.network('https://i.ibb.co/gFpGFPW/image.png'),
                             Text('\n\n'),
                             Text('Micro Test\n',
                               style: TextStyle(
@@ -113,12 +127,12 @@ class Tema11 extends StatelessWidget{
                               textAlign: TextAlign.center,
                             ),
                             TextButton(
-                              onPressed: () {
+                              onPressed: null, /*() {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
                                         builder: (context) => test));
-                              },
+                              },*/
                               child: Container(
                                 width: screenWidth-130,
                                 color: Colors.yellow.shade700,

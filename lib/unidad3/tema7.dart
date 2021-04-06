@@ -3,25 +3,26 @@ import 'package:flutter/material.dart';
 import 'package:p_django/templates/header.dart';
 import 'package:p_django/templates/leftmenu.dart';
 
-class Tema45 extends StatelessWidget {
+class Tema37 extends StatelessWidget{
+  
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
     final screenWidth = screenSize.width;
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Tema 5',
+      title: 'Tema 7',
       home: Scaffold(
         appBar: Header(
           title: Text(
-            'Unidad 4, Tema 5',
+            'Unidad III, Tema 7',
             style: TextStyle(
               fontFamily: 'PatuaOne',
               fontWeight: FontWeight.bold,
             ),
           ),
         ),
-        drawer: LeftMenu(),
+        drawer:  LeftMenu(),
         body: ListView(
           children: [
             Container(
@@ -55,8 +56,8 @@ class Tema45 extends StatelessWidget {
                   ),
                   Column(
                     children: [
-                      new Text(
-                        'Servicios e Interfaces',
+                      new Text(''),
+                      new Text('creando servicios web en Django',
                         style: TextStyle(
                           fontFamily: 'PatuaOne',
                           fontSize: 38,
@@ -64,53 +65,58 @@ class Tema45 extends StatelessWidget {
                       ),
                       new Text(''),
                       new Container(
-                        width: screenWidth - 25,
+                        width: screenWidth-25,
                         child: Column(
                           children: [
-                            Text(''),
-                            new Text(
-                              'Interfaces',
+                            Text(
+                              'Es una alternativa en auge a otros protocolos estándar de intercambio de datos como SOAP, que disponen de una gran capacidad pero también mucha complejidad. A veces es preferible una solución más sencilla de manipulación de datos como REST.\n',
+                              style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
+                              textAlign: TextAlign.justify,
+                            ),
+                            Text('Operaciones soportadas en el servicio web',
                               style: TextStyle(
                                 fontFamily: 'PatuaOne',
                                 fontSize: 38,
                               ),
+                              textAlign: TextAlign.center,
                             ),
-                            Text(''),
                             Text(
-                              'interfaz es una biblioteca para declarar interfaces y para afirmar estáticamente que las clases implementan esas interfaces. Su objetivo es proporcionar una semántica más estricta y mejores mensajes de error que el módulo abc integrado de Python. interfaz es compatible con Python 2.7 y Python 3.4+.',
-                              style: TextStyle(
-                                  fontFamily: 'PatuaOne', fontSize: 24),
+                              '''\n• GET: Se utiliza para consultar, leer y en definitiva acceder a un recurso
+
+• POST: Envía datos para crear un recurso. Como en cualquier petición POST, los datos deben ir incluidos en el cuerpo de la petición.
+
+• PUT: Utilizado para editar un recurso. Al igual que el POST, los datos deben ir en el cuerpo de la petición.
+
+• DELETE: Es la opción para eliminar un recurso
+
+• PATCH: Se utiliza para modificar parcialmente un recurso, aunque se utiliza en muy pocas ocasiones. Normalmente se utiliza simplemente PUT.\n\n''',
+                              style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
                               textAlign: TextAlign.justify,
                             ),
-                            Text(''),
-                            Image.network(
-                                'https://i.postimg.cc/4dkrzHdb/asdf2332323.jpg'),
-                            Text(''),
-                            Text(
-                              'Servicio',
+                            Text('Generando el servicio',
                               style: TextStyle(
                                 fontFamily: 'PatuaOne',
                                 fontSize: 38,
                               ),
+                              textAlign: TextAlign.center,
                             ),
-                            Text(''),
                             Text(
-                              'Este paquete facilita la escritura de servicios Unix, es decir, procesos en segundo plano ("demonios") controlados por una aplicación en primer plano (por ejemplo, un script de consola).',
-                              style: TextStyle(
-                                  fontFamily: 'PatuaOne', fontSize: 24),
+                              '\nPara generar el servicio importaremos a nuestro modelo los valores resultantes de los lenguajes de programacion que podra consumir el servicio y generaremos un Rest_Framework para generarlo.\n\n',
+                              style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
                               textAlign: TextAlign.justify,
                             ),
-                            Text(''),
-                            Text(
-                              ' Siendo el comanto "pip install service" para instalar dicho paquete',
+                            Image.network('https://i.ibb.co/7ntJ8CN/image.png'),
+                            Image.network('https://i.ibb.co/gM05kWQ/image.png'),
+                            Text('Generamos las urls correspondiente para importar estas funciones a travez de la vista y tendremos un consumo de servicio rest en nuestra aplicacion de Django',
                               style: TextStyle(
-                                  fontFamily: 'PatuaOne', fontSize: 38),
-                              textAlign: TextAlign.justify,
+                                fontFamily: 'PatuaOne',
+                                fontSize: 24,
+                              ),
+                              textAlign: TextAlign.center,
                             ),
-                            Text(''),
+                            Image.network('https://i.ibb.co/cgrQBKd/image.png'),
                             Text('\n\n'),
-                            Text(
-                              'Micro Test\n',
+                            Text('Micro Test\n',
                               style: TextStyle(
                                 fontFamily: 'PatuaOne',
                                 fontSize: 38,
@@ -118,20 +124,25 @@ class Tema45 extends StatelessWidget {
                               textAlign: TextAlign.center,
                             ),
                             TextButton(
-                              onPressed: () {},
+                              onPressed: null, /*() {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => test));
+                              },*/
                               child: Container(
-                                width: screenWidth - 130,
+                                width: screenWidth-130,
                                 color: Colors.yellow.shade700,
                                 child: ImageIcon(
-                                  AssetImage('assets/images/test.png'),
+                                  AssetImage('assets/images/test.png'), 
                                   color: Colors.blue.shade700,
-                                  size: screenWidth / 4,
+                                  size: screenWidth/4,
                                 ),
                               ),
                             ),
                           ],
-                        ),
-                      )
+                        )
+                      ),
                     ],
                   ),
                   Expanded(

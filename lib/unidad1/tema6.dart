@@ -2,21 +2,20 @@ import 'package:flutter/material.dart';
 
 import 'package:p_django/templates/header.dart';
 import 'package:p_django/templates/leftmenu.dart';
-import 'package:p_django/unidad1/test/test1.dart';
 
-class Tema11 extends StatelessWidget{
-  Test1 test = new Test1();
+class Tema16 extends StatelessWidget{
+  
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
     final screenWidth = screenSize.width;
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Tema 1',
+      title: 'Tema 6',
       home: Scaffold(
         appBar: Header(
           title: Text(
-            'Unidad I, Tema 1',
+            'Unidad I, Tema 6',
             style: TextStyle(
               fontFamily: 'PatuaOne',
               fontWeight: FontWeight.bold,
@@ -57,7 +56,7 @@ class Tema11 extends StatelessWidget{
                   ),
                   Column(
                     children: [
-                      new Text('¿QUE ES PYTHON?',
+                      new Text('Colecciones',
                         style: TextStyle(
                           fontFamily: 'PatuaOne',
                           fontSize: 38,
@@ -69,17 +68,12 @@ class Tema11 extends StatelessWidget{
                         child: Column(
                           children: [
                             Text(
-                              'Python es un lenguaje de programacion, este lenguaje fue creado a principios de los noventa por Guido van Rossum en los Países Bajos.',
+                              'Las colecciones son un tipo de datos diseñados específicamente para agrupar objetos y llevar a cabo tareas con ellos.  Las estructuras de datos más utilizadas en Python son las listas, tuplas (listas inmutables) y los diccionarios, aunque personalmente también suelo usar mucho los conjuntos (sets).\n',
                               style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
                               textAlign: TextAlign.justify,
                             ),
-                            Image.network('https://upload.wikimedia.org/wikipedia/commons/6/66/Guido_van_Rossum_OSCON_2006.jpg'),
-                            Text(
-                              'Es relativamente joven (Fortran 1957, Pascal 1970, C 1972, Modula-2 1978, Java 1991). Toma características de lenguajes predecesores, incluso, compatibilizando la solución de varios de ellos. Por ejemplo, habilita tres formas de imprimir el valor de una variable: desde el entorno interactivo escribiendo su nombre (como en Basic), usando la función print, con concatenación de elementos (al estilo del write de Pascal) o bien con patrones de formato (al estilo del printf de C).\n\nEs software libre, y está implementado en todas las plataformas y sistemas operativos habituales.\n\n',
-                              style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
-                              textAlign: TextAlign.justify,
-                            ),
-                            Text('Python Software Foundation',
+                            Image.network('https://runestone.academy/runestone/static/pythoned/_images/inheritance1.png'),
+                            Text('Estructuras implementadas en Colecciones',
                               style: TextStyle(
                                 fontFamily: 'PatuaOne',
                                 fontSize: 38,
@@ -87,11 +81,13 @@ class Tema11 extends StatelessWidget{
                               textAlign: TextAlign.center,
                             ),
                             Text(
-                              '\nLa Python Software Foundation (PSF) es una corporación sin fines de lucro 501 que posee los derechos de propiedad intelectual detrás del lenguaje de programación Python. Administramos las licencias de código abierto para Python versión 2.1 y posteriores, y poseemos y protegemos las marcas comerciales asociadas con Python.\n\n',
+                              '''\nNo todas las estructuras de datos exponen exactamente las mismas operaciones, por ejemplo una lista no deja buscar por clave (si bien sí por índice) y un conjunto no deja buscar ni por una cosa ni por otra.
+
+El siguiente playground está dividido en tres ficheros, main.py desde el que se importa listas.py y diccionarios.py, para ver los resultados de uno u otro, elimina o comenta su respectivo import.\n\n''',
                               style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
                               textAlign: TextAlign.justify,
                             ),
-                            Text('Su Comunidad',
+                            Text('Listas',
                               style: TextStyle(
                                 fontFamily: 'PatuaOne',
                                 fontSize: 38,
@@ -99,11 +95,41 @@ class Tema11 extends StatelessWidget{
                               textAlign: TextAlign.center,
                             ),
                             Text(
-                              '\nEl gran software es soportado por grandes personas. La base de usuarios es entusiasta, dedicada a fomentar el uso del lenguaje y comprometida a que sea diversa y amigable.\n\n',
+                              '''\nUna lista es una estructura de datos y un tipo de dato en python con características especiales. Lo especial de las listas en Python es que nos permiten almacenar cualquier tipo de valor como enteros, cadenas y hasta otras funciones.
+
+Una lista es un arreglo de elementos donde podemos ingresar cualquier tipo de dato, para acceder a estos datos podemos hacer mediante un índice.\n\n''',
                               style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
                               textAlign: TextAlign.justify,
                             ),
-                            Image.network('https://4.bp.blogspot.com/-17dwurGf3-0/Wc0YjqSyMPI/AAAAAAAABng/j4yYDf8gTm4tYYnsjGu4i3xdgz8CZ6jhwCLcBGAs/s1600/IMG_0811.jpg'),
+                            Image.network('https://i.ibb.co/nDLcqz6/image.png'),
+                            Text('Tuplas',
+                              style: TextStyle(
+                                fontFamily: 'PatuaOne',
+                                fontSize: 38,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                            Text(
+                              '''\nEn programación, en general, al querer modelar objetos de la vida real, es muy común que querramos describir un objeto como un agrupamiento de datos de distintos tipos. Veamos algunos ejemplos:
+
+Una fecha la podemos querer representar como la terna día (un número entero), mes (una cadena de caracteres), y año (un número entero), y tendremos por ejemplo: (25, "Mayo", 1810).\n\n''',
+                              style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
+                              textAlign: TextAlign.justify,
+                            ),
+                            Image.network('https://i.ibb.co/tQbmQb6/image.png'),
+                            Text('Diccionarios',
+                              style: TextStyle(
+                                fontFamily: 'PatuaOne',
+                                fontSize: 38,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                            Text(
+                              '''\nUn Diccionario es una estructura de datos y un tipo de dato en Python con características especiales que nos permite almacenar cualquier tipo de valor como enteros, cadenas, listas e incluso otras funciones. Estos diccionarios nos permiten además identificar cada elemento por una clave (Key).\n\n''',
+                              style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
+                              textAlign: TextAlign.justify,
+                            ),
+                            Image.network('https://i.ibb.co/Pr2qvGQ/image.png'),
                             Text('\n\n'),
                             Text('Micro Test\n',
                               style: TextStyle(
@@ -113,12 +139,12 @@ class Tema11 extends StatelessWidget{
                               textAlign: TextAlign.center,
                             ),
                             TextButton(
-                              onPressed: () {
+                              onPressed: null, /*() {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
                                         builder: (context) => test));
-                              },
+                              },*/
                               child: Container(
                                 width: screenWidth-130,
                                 color: Colors.yellow.shade700,

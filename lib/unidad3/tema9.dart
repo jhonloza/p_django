@@ -3,25 +3,26 @@ import 'package:flutter/material.dart';
 import 'package:p_django/templates/header.dart';
 import 'package:p_django/templates/leftmenu.dart';
 
-class Tema45 extends StatelessWidget {
+class Tema39 extends StatelessWidget{
+  
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
     final screenWidth = screenSize.width;
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Tema 5',
+      title: 'Tema 8',
       home: Scaffold(
         appBar: Header(
           title: Text(
-            'Unidad 4, Tema 5',
+            'Unidad III, Tema 9',
             style: TextStyle(
               fontFamily: 'PatuaOne',
               fontWeight: FontWeight.bold,
             ),
           ),
         ),
-        drawer: LeftMenu(),
+        drawer:  LeftMenu(),
         body: ListView(
           children: [
             Container(
@@ -55,8 +56,8 @@ class Tema45 extends StatelessWidget {
                   ),
                   Column(
                     children: [
-                      new Text(
-                        'Servicios e Interfaces',
+                      new Text(''),
+                      new Text('Consumir Webservice en Django',
                         style: TextStyle(
                           fontFamily: 'PatuaOne',
                           fontSize: 38,
@@ -64,53 +65,63 @@ class Tema45 extends StatelessWidget {
                       ),
                       new Text(''),
                       new Container(
-                        width: screenWidth - 25,
+                        width: screenWidth-25,
                         child: Column(
                           children: [
-                            Text(''),
-                            new Text(
-                              'Interfaces',
+                            Text(
+                              'De igual manera que puede crear una api rest y json Django puede consumir servicios web de otras aplicaciones, utilizaremos la libreria "requests" importnando con PyPI\n',
+                              style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
+                              textAlign: TextAlign.justify,
+                            ),
+                            Text('libreria a utilizar',
                               style: TextStyle(
                                 fontFamily: 'PatuaOne',
                                 fontSize: 38,
                               ),
+                              textAlign: TextAlign.center,
                             ),
-                            Text(''),
+                            Image.network('https://i.ibb.co/QD5q7DG/image.png'),
                             Text(
-                              'interfaz es una biblioteca para declarar interfaces y para afirmar estáticamente que las clases implementan esas interfaces. Su objetivo es proporcionar una semántica más estricta y mejores mensajes de error que el módulo abc integrado de Python. interfaz es compatible con Python 2.7 y Python 3.4+.',
-                              style: TextStyle(
-                                  fontFamily: 'PatuaOne', fontSize: 24),
+                              '''\nCrearemos nuestra aplicacion y agregaremos en nuestro View lo correspondiente para importar la api externa.\n\n''',
+                              style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
                               textAlign: TextAlign.justify,
                             ),
-                            Text(''),
-                            Image.network(
-                                'https://i.postimg.cc/4dkrzHdb/asdf2332323.jpg'),
-                            Text(''),
-                            Text(
-                              'Servicio',
+                            Image.network('https://i.ibb.co/BcTN1qT/image.png'),
+                            Text('Creando una plantilla para mostrar los resultados de la api',
                               style: TextStyle(
                                 fontFamily: 'PatuaOne',
                                 fontSize: 38,
                               ),
+                              textAlign: TextAlign.center,
                             ),
-                            Text(''),
                             Text(
-                              'Este paquete facilita la escritura de servicios Unix, es decir, procesos en segundo plano ("demonios") controlados por una aplicación en primer plano (por ejemplo, un script de consola).',
-                              style: TextStyle(
-                                  fontFamily: 'PatuaOne', fontSize: 24),
+                              '\nPara esta api crearemos las plantillas de home  y base para insertar los datos importados desde la api externa.\n\n',
+                              style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
                               textAlign: TextAlign.justify,
                             ),
-                            Text(''),
-                            Text(
-                              ' Siendo el comanto "pip install service" para instalar dicho paquete',
+                            Image.network('https://i.ibb.co/7GnVcy7/image.png'),
+                            Image.network('https://i.ibb.co/BVcMYDR/image.png'),
+                            Text('importando librerias de bootstrap',
                               style: TextStyle(
-                                  fontFamily: 'PatuaOne', fontSize: 38),
+                                fontFamily: 'PatuaOne',
+                                fontSize: 38,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                            Text(
+                              '\nEn este caso importamos las librerias de bootstrap para tener una apariencia mas profesional en nuestras plantillas y modificamos cada una para mostrar los resultados por la URL.\n\n',
+                              style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
                               textAlign: TextAlign.justify,
                             ),
-                            Text(''),
+                            Image.network('https://i.ibb.co/G7LDFWR/image.png'),
+                            Image.network('https://i.ibb.co/SmrTJvR/image.png'),
+                            Text(
+                              '\nAl final mostrara el consumo de servicio a traves de la aplicacion web dirigiendonos a nuestra URL de la app seguido de /home/ y se nos tresenta como objetos con detalles personalizados.\n\n',
+                              style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
+                              textAlign: TextAlign.justify,
+                            ),
                             Text('\n\n'),
-                            Text(
-                              'Micro Test\n',
+                            Text('Micro Test\n',
                               style: TextStyle(
                                 fontFamily: 'PatuaOne',
                                 fontSize: 38,
@@ -118,20 +129,25 @@ class Tema45 extends StatelessWidget {
                               textAlign: TextAlign.center,
                             ),
                             TextButton(
-                              onPressed: () {},
+                              onPressed: null, /*() {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => test));
+                              },*/
                               child: Container(
-                                width: screenWidth - 130,
+                                width: screenWidth-130,
                                 color: Colors.yellow.shade700,
                                 child: ImageIcon(
-                                  AssetImage('assets/images/test.png'),
+                                  AssetImage('assets/images/test.png'), 
                                   color: Colors.blue.shade700,
-                                  size: screenWidth / 4,
+                                  size: screenWidth/4,
                                 ),
                               ),
                             ),
                           ],
-                        ),
-                      )
+                        )
+                      ),
                     ],
                   ),
                   Expanded(
