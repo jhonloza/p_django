@@ -7,6 +7,7 @@ import 'package:p_django/unidad4/test/test43.dart';
 class Tema43 extends StatelessWidget {
   List<String> usuario = new List();
   Tema43({Key key, this.usuario}):super(key: key);
+  Test43 test = new Test43();
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
@@ -24,7 +25,7 @@ class Tema43 extends StatelessWidget {
             ),
           ),
         ),
-        drawer: LeftMenu(),
+        drawer: LeftMenu(usuario: usuario,),
         body: ListView(
           children: [
             Container(

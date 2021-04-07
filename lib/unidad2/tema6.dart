@@ -7,6 +7,7 @@ import 'package:p_django/unidad2/test/test26.dart';
 class Tema26 extends StatelessWidget {
   List<String> usuario = new List();
   Tema26({Key key, this.usuario}):super(key: key);
+  Test26 test = new Test26();
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
@@ -24,7 +25,7 @@ class Tema26 extends StatelessWidget {
             ),
           ),
         ),
-        drawer: LeftMenu(),
+        drawer: LeftMenu(usuario: usuario,),
         body: ListView(
           children: [
             Container(

@@ -24,7 +24,7 @@ class Tema39 extends StatelessWidget{
             ),
           ),
         ),
-        drawer: LeftMenu(),
+        drawer: LeftMenu(usuario: usuario,),
         body: ListView(
           children: [
             Container(
