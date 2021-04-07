@@ -34,34 +34,6 @@ import 'package:p_django/unidad4/tema6.dart';
 class Inicio extends StatelessWidget {
   List<String> usuario = new List();
   Inicio({Key key, this.usuario}):super(key: key);
-  Tema12 t12 = new Tema12();
-  Tema13 t13 = new Tema13();
-  Tema14 t14 = new Tema14();
-  Tema15 t15 = new Tema15();
-  Tema16 t16 = new Tema16();
-  Tema17 t17 = new Tema17();
-  Tema21 t21 = new Tema21();
-  Tema22 t22 = new Tema22();
-  Tema23 t23 = new Tema23();
-  Tema24 t24 = new Tema24();
-  Tema25 t25 = new Tema25();
-  Tema26 t26 = new Tema26();
-
-  Tema31 t31 = new Tema31();
-  Tema32 t32 = new Tema32();
-  Tema33 t33 = new Tema33();
-  Tema34 t34 = new Tema34();
-  Tema35 t35 = new Tema35();
-  Tema36 t36 = new Tema36();
-  Tema37 t37 = new Tema37();
-  Tema38 t38 = new Tema38();
-  Tema39 t39 = new Tema39();
-  Tema41 t41 = new Tema41();
-  Tema42 t42 = new Tema42();
-  Tema43 t43 = new Tema43();
-  Tema44 t44 = new Tema44();
-  Tema45 t45 = new Tema45();
-  Tema46 t46 = new Tema46();
 
   @override
   Widget build(BuildContext context) {
@@ -164,7 +136,7 @@ class Inicio extends StatelessWidget {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => t12));
+                                        builder: (context) => Tema12(usuario: usuario,)));
                               },
                               child: Image.asset(
                                 'assets/images/tema1/tema12.png',
@@ -198,7 +170,7 @@ class Inicio extends StatelessWidget {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => t13));
+                                        builder: (context) => Tema13(usuario: usuario,)));
                               },
                               child: Image.asset(
                                 'assets/images/tema1/tema13.png',
@@ -232,7 +204,7 @@ class Inicio extends StatelessWidget {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => t14));
+                                        builder: (context) => Tema14(usuario: usuario,)));
                               },
                               child: Image.asset(
                                 'assets/images/tema1/tema14.png',
@@ -264,7 +236,7 @@ class Inicio extends StatelessWidget {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => t15));
+                                        builder: (context) => Tema15(usuario: usuario,)));
                               },
                               child: Image.asset(
                                 'assets/images/tema1/tema15.png',
@@ -279,7 +251,7 @@ class Inicio extends StatelessWidget {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => t16));
+                                        builder: (context) => Tema16(usuario: usuario,)));
                               },
                               child: Image.asset(
                                 'assets/images/tema1/tema16.png',
@@ -294,7 +266,7 @@ class Inicio extends StatelessWidget {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => t17));
+                                        builder: (context) => Tema17(usuario: usuario,)));
                               },
                               child: Image.asset(
                                 'assets/images/tema1/tema17.png',
@@ -360,7 +332,7 @@ class Inicio extends StatelessWidget {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => t21));
+                                        builder: (context) => Tema21(usuario: usuario,)));
                               },
                               child: Image.asset(
                                 'assets/images/tema2/tema21.png',
@@ -394,7 +366,7 @@ class Inicio extends StatelessWidget {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => t22));
+                                        builder: (context) => Tema22(usuario: usuario,)));
                               },
                               child: Image.asset(
                                 'assets/images/tema2/tema22.png',
@@ -426,7 +398,7 @@ class Inicio extends StatelessWidget {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => t23));
+                                        builder: (context) => Tema23(usuario: usuario,)));
                               },
                               child: Image.asset(
                                 'assets/images/tema2/tema23.png',
@@ -442,7 +414,7 @@ class Inicio extends StatelessWidget {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => t24));
+                                        builder: (context) => Tema24(usuario: usuario,)));
                               },
                               child: Image.asset(
                                 'assets/images/tema2/tema24.png',
@@ -487,7 +459,7 @@ class Inicio extends StatelessWidget {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => t25));
+                                        builder: (context) => Tema25(usuario: usuario,)));
                               },
                               child: Image.asset(
                                 'assets/images/tema2/tema25.png',
@@ -519,7 +491,7 @@ class Inicio extends StatelessWidget {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => t26));
+                                        builder: (context) => Tema26(usuario: usuario,)));
                               },
                               child: Image.asset(
                                 'assets/images/tema2/tema26.png',
@@ -596,7 +568,7 @@ class Inicio extends StatelessWidget {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => t31));
+                                        builder: (context) => Tema31(usuario: usuario,)));
                               },
                               child: Image.asset(
                                 'assets/images/tema3/tema31.png',
@@ -630,7 +602,7 @@ class Inicio extends StatelessWidget {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => t32));
+                                        builder: (context) => Tema32(usuario: usuario,)));
                               },
                               child: Image.asset(
                                 'assets/images/tema3/tema32.png',
@@ -662,7 +634,7 @@ class Inicio extends StatelessWidget {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => t33));
+                                        builder: (context) => Tema33(usuario: usuario,)));
                               },
                               child: Image.asset(
                                 'assets/images/tema3/tema33.png',
@@ -678,7 +650,7 @@ class Inicio extends StatelessWidget {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => t34));
+                                        builder: (context) => Tema34(usuario: usuario,)));
                               },
                               child: Image.asset(
                                 'assets/images/tema3/tema34.png',
@@ -721,7 +693,7 @@ class Inicio extends StatelessWidget {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => t35));
+                                        builder: (context) => Tema35(usuario: usuario,)));
                               },
                               child: Image.asset(
                                 'assets/images/tema3/tema35.png',
@@ -737,7 +709,7 @@ class Inicio extends StatelessWidget {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => t36));
+                                        builder: (context) => Tema36(usuario: usuario,)));
                               },
                               child: Image.asset(
                                 'assets/images/tema3/tema36.png',
@@ -782,7 +754,7 @@ class Inicio extends StatelessWidget {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => t37));
+                                        builder: (context) => Tema37(usuario: usuario,)));
                               },
                               child: Image.asset(
                                 'assets/images/tema3/tema37.png',
@@ -814,7 +786,7 @@ class Inicio extends StatelessWidget {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => t38));
+                                        builder: (context) => Tema38(usuario: usuario,)));
                               },
                               child: Image.asset(
                                 'assets/images/tema3/tema38.png',
@@ -830,7 +802,7 @@ class Inicio extends StatelessWidget {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => t39));
+                                        builder: (context) => Tema39(usuario: usuario,)));
                               },
                               child: Image.asset(
                                 'assets/images/tema3/tema39.png',
@@ -896,7 +868,7 @@ class Inicio extends StatelessWidget {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => t41));
+                                        builder: (context) => Tema41(usuario: usuario,)));
                               },
                               child: Image.asset(
                                 'assets/images/tema4/tema41.png',
@@ -930,7 +902,7 @@ class Inicio extends StatelessWidget {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => t42));
+                                        builder: (context) => Tema42(usuario: usuario,)));
                               },
                               child: Image.asset(
                                 'assets/images/tema4/tema42.png',
@@ -962,7 +934,7 @@ class Inicio extends StatelessWidget {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => t43));
+                                        builder: (context) => Tema43(usuario: usuario,)));
                               },
                               child: Image.asset(
                                 'assets/images/tema4/tema43.png',
@@ -978,7 +950,7 @@ class Inicio extends StatelessWidget {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => t44));
+                                        builder: (context) => Tema44(usuario: usuario,)));
                               },
                               child: Image.asset(
                                 'assets/images/tema4/tema44.png',
@@ -1021,7 +993,7 @@ class Inicio extends StatelessWidget {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => t45));
+                                        builder: (context) => Tema45(usuario: usuario,)));
                               },
                               child: Image.asset(
                                 'assets/images/tema4/tema45.png',
@@ -1037,7 +1009,7 @@ class Inicio extends StatelessWidget {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => t46));
+                                        builder: (context) => Tema46(usuario: usuario,)));
                               },
                               child: Image.asset(
                                 'assets/images/tema4/tema46.png',
