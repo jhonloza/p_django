@@ -9,19 +9,19 @@ enum SingingCharacter { op1, op2, op3, op4 }
 class Test23 extends StatelessWidget {
   String grupoOpcion = '';
   Formulario form1 = new Formulario(
-    pregunta: '¿Quien creo el Lenguaje Python?',
-    o1: 'Dennis Ritchie',
-    o2: 'Yukihiro Matsumoto',
-    o3: 'Guido van Rossum',
-    o4: 'Rasmus Lerdorf',
+    pregunta: '¿Cual es el comando ara instalar paquetes?',
+    o1: 'pi intall',
+    o2: 'intall user',
+    o3: 'pip install --user',
+    o4: 'install',
     grupo: '',
   );
   Formulario form2 = new Formulario(
-    pregunta: '¿Como se llama la fundacion comunitaria de Python?',
-    o1: 'Python Software Foundation',
-    o2: 'Mision Statement of the Python',
-    o3: 'Python Public Foundation',
-    o4: 'Zope Public Licence of Python',
+    pregunta: '¿Donde se ubican los paquete una vez intalados?',
+    o1: 'local/bin',
+    o2: 'Descargas',
+    o3: 'Carpeta local',
+    o4: 'En reppositorio',
     grupo: '',
   );
 

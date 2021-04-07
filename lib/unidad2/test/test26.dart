@@ -9,19 +9,19 @@ enum SingingCharacter { op1, op2, op3, op4 }
 class Test26 extends StatelessWidget {
   String grupoOpcion = '';
   Formulario form1 = new Formulario(
-    pregunta: '¿Quien creo el Lenguaje Python?',
-    o1: 'Dennis Ritchie',
-    o2: 'Yukihiro Matsumoto',
-    o3: 'Guido van Rossum',
-    o4: 'Rasmus Lerdorf',
+    pregunta: '¿Que es un servicio web PYPI?',
+    o1: 'Provee codigo',
+    o2: 'repositiorio de servicios',
+    o3: 'Consideradas como funcinalidades de app para ser expuesto en la web',
+    o4: 'ayuda a crear modulos',
     grupo: '',
   );
   Formulario form2 = new Formulario(
-    pregunta: '¿Como se llama la fundacion comunitaria de Python?',
-    o1: 'Python Software Foundation',
-    o2: 'Mision Statement of the Python',
-    o3: 'Python Public Foundation',
-    o4: 'Zope Public Licence of Python',
+    pregunta: '¿Cual es el comando para instalar el paquete de servicios eweb?',
+    o1: 'pip install webservices[django]',
+    o2: 'install python services',
+    o3: 'import module',
+    o4: 'import install package',
     grupo: '',
   );
 
