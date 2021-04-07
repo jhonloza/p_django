@@ -4,7 +4,8 @@ import 'package:p_django/templates/header.dart';
 import 'package:p_django/templates/leftmenu.dart';
 
 class Tema32 extends StatelessWidget{
-  
+  List<String> usuario = new List();
+  Tema32({Key key, this.usuario}):super(key: key);
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
