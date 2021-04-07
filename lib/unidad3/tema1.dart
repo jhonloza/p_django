@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:p_django/templates/header.dart';
 import 'package:p_django/templates/leftmenu.dart';
+import 'package:p_django/unidad3/test/test1.dart';
 
 class Tema31 extends StatelessWidget{
   List<String> usuario = new List();
@@ -23,7 +24,7 @@ class Tema31 extends StatelessWidget{
             ),
           ),
         ),
-        drawer:  LeftMenu(),
+        drawer: LeftMenu(),
         body: ListView(
           children: [
             Container(
@@ -31,7 +32,7 @@ class Tema31 extends StatelessWidget{
               child: Row(
                 children: [
                   TextButton(
-                    onPressed: (){
+                    onPressed: () {
                       Navigator.pop(context);
                     },
                     child: Image(
@@ -57,7 +58,8 @@ class Tema31 extends StatelessWidget{
                   ),
                   Column(
                     children: [
-                      new Text('DJANGO',
+                      new Text(
+                        'DJANGO',
                         style: TextStyle(
                           fontFamily: 'PatuaOne',
                           fontSize: 38,
@@ -65,83 +67,94 @@ class Tema31 extends StatelessWidget{
                       ),
                       new Text(''),
                       new Container(
-                        width: screenWidth-25,
-                        child: Column(
-                          children: [
-                            Text(
-                              'Debido a que Django fue desarrollado en un ambiente de sala de redacción de ritmo rápido, fue diseñado para hacer tareas comunes de desarrollo web de forma rápida y fácil. Aquí se incluye una introducción informal de cómo escribir una aplicación web que utiliza una base de datos con Django.\n',
-                              style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
-                              textAlign: TextAlign.justify,
-                            ),
-                            Image.network('https://i.ibb.co/Pmv1C0R/image.png'),
-                            Text('Aplicaciones Web Basadas en Django y Python',
-                              style: TextStyle(
-                                fontFamily: 'PatuaOne',
-                                fontSize: 38,
+                          width: screenWidth - 25,
+                          child: Column(
+                            children: [
+                              Text(
+                                'Debido a que Django fue desarrollado en un ambiente de sala de redacción de ritmo rápido, fue diseñado para hacer tareas comunes de desarrollo web de forma rápida y fácil. Aquí se incluye una introducción informal de cómo escribir una aplicación web que utiliza una base de datos con Django.\n',
+                                style: TextStyle(
+                                    fontFamily: 'PatuaOne', fontSize: 24),
+                                textAlign: TextAlign.justify,
                               ),
-                              textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              '''\nDjango es un framework de aplicaciones web gratuito y de código abierto, el cual tiene muchas características que lo hacen especial, cuenta con varios componentes internos, con los que se puede desarrollar un sitio web escalable, y por supuesto si quieres agregar alguna funcionalidad extra, seguramente existe un paquete que lo realiza, también por estar escrito en Python, nos da acceso a todas las librerías disponibles y así poderlas integrar a nuestro código de manera sencilla, esta combinación de Python Django permite desarrollar muy rápido para la web.\n\n''',
-                              style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
-                              textAlign: TextAlign.justify,
-                            ),
-                            Text('Componentes principales',
-                              style: TextStyle(
-                                fontFamily: 'PatuaOne',
-                                fontSize: 38,
+                              Image.network(
+                                  'https://i.ibb.co/Pmv1C0R/image.png'),
+                              Text(
+                                'Aplicaciones Web Basadas en Django y Python',
+                                style: TextStyle(
+                                  fontFamily: 'PatuaOne',
+                                  fontSize: 38,
+                                ),
+                                textAlign: TextAlign.center,
                               ),
-                              textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              '''\nEl Administrador: Es autogenerado, permite personalizarse de forma sencilla y cuenta con opciones avanzadas.
+                              Text(
+                                '''\nDjango es un framework de aplicaciones web gratuito y de código abierto, el cual tiene muchas características que lo hacen especial, cuenta con varios componentes internos, con los que se puede desarrollar un sitio web escalable, y por supuesto si quieres agregar alguna funcionalidad extra, seguramente existe un paquete que lo realiza, también por estar escrito en Python, nos da acceso a todas las librerías disponibles y así poderlas integrar a nuestro código de manera sencilla, esta combinación de Python Django permite desarrollar muy rápido para la web.\n\n''',
+                                style: TextStyle(
+                                    fontFamily: 'PatuaOne', fontSize: 24),
+                                textAlign: TextAlign.justify,
+                              ),
+                              Text(
+                                'Componentes principales',
+                                style: TextStyle(
+                                  fontFamily: 'PatuaOne',
+                                  fontSize: 38,
+                                ),
+                                textAlign: TextAlign.center,
+                              ),
+                              Text(
+                                '''\nEl Administrador: Es autogenerado, permite personalizarse de forma sencilla y cuenta con opciones avanzadas.
 
 ORM: Es lo que permite facilitar la conexión con la base de datos, puede optimizarse y permite consultas avanzadas, este soporta múltiples motores de base de datos y algunos de ellos extienden funcionalidades extra como por ejemplo Postgresql e incluso PostGIS que es una extension para manejo de base de datos geográficas.\n\n''',
-                              style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
-                              textAlign: TextAlign.justify,
-                            ),
-                            Image.network('https://i.ibb.co/Dtc152g/image.png'),
-                            Text('Estructura MVC de Django',
-                              style: TextStyle(
-                                fontFamily: 'PatuaOne',
-                                fontSize: 38,
+                                style: TextStyle(
+                                    fontFamily: 'PatuaOne', fontSize: 24),
+                                textAlign: TextAlign.justify,
                               ),
-                              textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              '\nLas aplicaciones web de Django normalmente agrupan el código que gestiona cada uno de estos pasos en ficheros separados:\n\n',
-                              style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
-                              textAlign: TextAlign.justify,
-                            ),
-                            Image.network('https://i.ibb.co/jrsb445/image.png'),
-                            Text('\n\n'),
-                            Text('Micro Test\n',
-                              style: TextStyle(
-                                fontFamily: 'PatuaOne',
-                                fontSize: 38,
+                              Image.network(
+                                  'https://i.ibb.co/Dtc152g/image.png'),
+                              Text(
+                                'Estructura MVC de Django',
+                                style: TextStyle(
+                                  fontFamily: 'PatuaOne',
+                                  fontSize: 38,
+                                ),
+                                textAlign: TextAlign.center,
                               ),
-                              textAlign: TextAlign.center,
-                            ),
-                            TextButton(
-                              onPressed: null, /*() {
+                              Text(
+                                '\nLas aplicaciones web de Django normalmente agrupan el código que gestiona cada uno de estos pasos en ficheros separados:\n\n',
+                                style: TextStyle(
+                                    fontFamily: 'PatuaOne', fontSize: 24),
+                                textAlign: TextAlign.justify,
+                              ),
+                              Image.network(
+                                  'https://i.ibb.co/jrsb445/image.png'),
+                              Text('\n\n'),
+                              Text(
+                                'Micro Test\n',
+                                style: TextStyle(
+                                  fontFamily: 'PatuaOne',
+                                  fontSize: 38,
+                                ),
+                                textAlign: TextAlign.center,
+                              ),
+                              TextButton(
+                                onPressed: null,
+                                /*() {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
                                         builder: (context) => test));
                               },*/
-                              child: Container(
-                                width: screenWidth-130,
-                                color: Colors.yellow.shade700,
-                                child: ImageIcon(
-                                  AssetImage('assets/images/test.png'), 
-                                  color: Colors.blue.shade700,
-                                  size: screenWidth/4,
+                                child: Container(
+                                  width: screenWidth - 130,
+                                  color: Colors.yellow.shade700,
+                                  child: ImageIcon(
+                                    AssetImage('assets/images/test.png'),
+                                    color: Colors.blue.shade700,
+                                    size: screenWidth / 4,
+                                  ),
                                 ),
                               ),
-                            ),
-                          ],
-                        )
-                      ),
+                            ],
+                          )),
                     ],
                   ),
                   Expanded(

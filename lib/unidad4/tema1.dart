@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:p_django/templates/header.dart';
 import 'package:p_django/templates/leftmenu.dart';
+import 'package:p_django/unidad4/test/test41.dart';
 
 class Tema41 extends StatelessWidget {
   List<String> usuario = new List();
@@ -31,7 +32,7 @@ class Tema41 extends StatelessWidget {
               child: Row(
                 children: [
                   TextButton(
-                    onPressed: (){
+                    onPressed: () {
                       Navigator.pop(context);
                     },
                     child: Image(
@@ -105,7 +106,12 @@ class Tema41 extends StatelessWidget {
                               textAlign: TextAlign.center,
                             ),
                             TextButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => test));
+                              },
                               child: Container(
                                 width: screenWidth - 130,
                                 color: Colors.yellow.shade700,

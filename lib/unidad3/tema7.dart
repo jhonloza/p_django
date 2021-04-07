@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:p_django/templates/header.dart';
 import 'package:p_django/templates/leftmenu.dart';
+import 'package:p_django/unidad3/test/test7.dart';
 
 class Tema37 extends StatelessWidget{
   List<String> usuario = new List();
@@ -23,7 +24,7 @@ class Tema37 extends StatelessWidget{
             ),
           ),
         ),
-        drawer:  LeftMenu(),
+        drawer: LeftMenu(),
         body: ListView(
           children: [
             Container(
@@ -31,7 +32,7 @@ class Tema37 extends StatelessWidget{
               child: Row(
                 children: [
                   TextButton(
-                    onPressed: (){
+                    onPressed: () {
                       Navigator.pop(context);
                     },
                     child: Image(
@@ -58,7 +59,8 @@ class Tema37 extends StatelessWidget{
                   Column(
                     children: [
                       new Text(''),
-                      new Text('creando servicios web en Django',
+                      new Text(
+                        'creando servicios web en Django',
                         style: TextStyle(
                           fontFamily: 'PatuaOne',
                           fontSize: 38,
@@ -66,23 +68,25 @@ class Tema37 extends StatelessWidget{
                       ),
                       new Text(''),
                       new Container(
-                        width: screenWidth-25,
-                        child: Column(
-                          children: [
-                            Text(
-                              'Es una alternativa en auge a otros protocolos estándar de intercambio de datos como SOAP, que disponen de una gran capacidad pero también mucha complejidad. A veces es preferible una solución más sencilla de manipulación de datos como REST.\n',
-                              style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
-                              textAlign: TextAlign.justify,
-                            ),
-                            Text('Operaciones soportadas en el servicio web',
-                              style: TextStyle(
-                                fontFamily: 'PatuaOne',
-                                fontSize: 38,
+                          width: screenWidth - 25,
+                          child: Column(
+                            children: [
+                              Text(
+                                'Es una alternativa en auge a otros protocolos estándar de intercambio de datos como SOAP, que disponen de una gran capacidad pero también mucha complejidad. A veces es preferible una solución más sencilla de manipulación de datos como REST.\n',
+                                style: TextStyle(
+                                    fontFamily: 'PatuaOne', fontSize: 24),
+                                textAlign: TextAlign.justify,
                               ),
-                              textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              '''\n• GET: Se utiliza para consultar, leer y en definitiva acceder a un recurso
+                              Text(
+                                'Operaciones soportadas en el servicio web',
+                                style: TextStyle(
+                                  fontFamily: 'PatuaOne',
+                                  fontSize: 38,
+                                ),
+                                textAlign: TextAlign.center,
+                              ),
+                              Text(
+                                '''\n• GET: Se utiliza para consultar, leer y en definitiva acceder a un recurso
 
 • POST: Envía datos para crear un recurso. Como en cualquier petición POST, los datos deben ir incluidos en el cuerpo de la petición.
 
@@ -91,59 +95,67 @@ class Tema37 extends StatelessWidget{
 • DELETE: Es la opción para eliminar un recurso
 
 • PATCH: Se utiliza para modificar parcialmente un recurso, aunque se utiliza en muy pocas ocasiones. Normalmente se utiliza simplemente PUT.\n\n''',
-                              style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
-                              textAlign: TextAlign.justify,
-                            ),
-                            Text('Generando el servicio',
-                              style: TextStyle(
-                                fontFamily: 'PatuaOne',
-                                fontSize: 38,
+                                style: TextStyle(
+                                    fontFamily: 'PatuaOne', fontSize: 24),
+                                textAlign: TextAlign.justify,
                               ),
-                              textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              '\nPara generar el servicio importaremos a nuestro modelo los valores resultantes de los lenguajes de programacion que podra consumir el servicio y generaremos un Rest_Framework para generarlo.\n\n',
-                              style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
-                              textAlign: TextAlign.justify,
-                            ),
-                            Image.network('https://i.ibb.co/7ntJ8CN/image.png'),
-                            Image.network('https://i.ibb.co/gM05kWQ/image.png'),
-                            Text('Generamos las urls correspondiente para importar estas funciones a travez de la vista y tendremos un consumo de servicio rest en nuestra aplicacion de Django',
-                              style: TextStyle(
-                                fontFamily: 'PatuaOne',
-                                fontSize: 24,
+                              Text(
+                                'Generando el servicio',
+                                style: TextStyle(
+                                  fontFamily: 'PatuaOne',
+                                  fontSize: 38,
+                                ),
+                                textAlign: TextAlign.center,
                               ),
-                              textAlign: TextAlign.center,
-                            ),
-                            Image.network('https://i.ibb.co/cgrQBKd/image.png'),
-                            Text('\n\n'),
-                            Text('Micro Test\n',
-                              style: TextStyle(
-                                fontFamily: 'PatuaOne',
-                                fontSize: 38,
+                              Text(
+                                '\nPara generar el servicio importaremos a nuestro modelo los valores resultantes de los lenguajes de programacion que podra consumir el servicio y generaremos un Rest_Framework para generarlo.\n\n',
+                                style: TextStyle(
+                                    fontFamily: 'PatuaOne', fontSize: 24),
+                                textAlign: TextAlign.justify,
                               ),
-                              textAlign: TextAlign.center,
-                            ),
-                            TextButton(
-                              onPressed: null, /*() {
+                              Image.network(
+                                  'https://i.ibb.co/7ntJ8CN/image.png'),
+                              Image.network(
+                                  'https://i.ibb.co/gM05kWQ/image.png'),
+                              Text(
+                                'Generamos las urls correspondiente para importar estas funciones a travez de la vista y tendremos un consumo de servicio rest en nuestra aplicacion de Django',
+                                style: TextStyle(
+                                  fontFamily: 'PatuaOne',
+                                  fontSize: 24,
+                                ),
+                                textAlign: TextAlign.center,
+                              ),
+                              Image.network(
+                                  'https://i.ibb.co/cgrQBKd/image.png'),
+                              Text('\n\n'),
+                              Text(
+                                'Micro Test\n',
+                                style: TextStyle(
+                                  fontFamily: 'PatuaOne',
+                                  fontSize: 38,
+                                ),
+                                textAlign: TextAlign.center,
+                              ),
+                              TextButton(
+                                onPressed: null,
+                                /*() {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
                                         builder: (context) => test));
                               },*/
-                              child: Container(
-                                width: screenWidth-130,
-                                color: Colors.yellow.shade700,
-                                child: ImageIcon(
-                                  AssetImage('assets/images/test.png'), 
-                                  color: Colors.blue.shade700,
-                                  size: screenWidth/4,
+                                child: Container(
+                                  width: screenWidth - 130,
+                                  color: Colors.yellow.shade700,
+                                  child: ImageIcon(
+                                    AssetImage('assets/images/test.png'),
+                                    color: Colors.blue.shade700,
+                                    size: screenWidth / 4,
+                                  ),
                                 ),
                               ),
-                            ),
-                          ],
-                        )
-                      ),
+                            ],
+                          )),
                     ],
                   ),
                   Expanded(
