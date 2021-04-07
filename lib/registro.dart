@@ -5,6 +5,7 @@ import 'package:p_django/login.dart';
 import 'Dart:math';
 
 class Registro extends StatelessWidget{
+  int iduser=0;
   String usuario ='', contrasena ='', nombreC ='', ident ='';
   @override
   Widget build(BuildContext context) {
@@ -99,9 +100,16 @@ class Registro extends StatelessWidget{
                             Conexion con = new Conexion();
                             await con.conn.open();
                             String sql1="select public.NuevoUsuario('"+usuario+"', '"+contrasena+"', '"+nombreC+"', '"+ident+"');";//creacion de cuenta
-                            String sql2="select public.VaciarDatos('"+ident+"');";//vacio de datos
+                            String sql2="SELECT idusuario FROM public.usuario where identificador = '"+ident+"';";
                             await con.conn.query(sql1);
-                            await con.conn.query(sql2);
+                            List<List<dynamic>> resultado = await con.conn.query(sql2);
+                            if(resultado != null || resultado.isNotEmpty){
+                              for (final dato in resultado) {
+                                iduser = dato[0];
+                              } 
+                            }
+                            String sql3="select public.VaciarDatos('"+ident+"', "+iduser.toString()+");";//vacio de datos
+                            await con.conn.query(sql3);
                             print('Registrado correctamente');
                             Navigator.pop(context);
                           }, 
