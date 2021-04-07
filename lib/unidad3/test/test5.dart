@@ -11,20 +11,20 @@ class Test5 extends StatelessWidget {
   Test5({Key key, this.usuario}) : super(key: key);
   String grupoOpcion = '';
   Formulario form1 = new Formulario(
-    pregunta: '¿Para importar un paquete se utliza el codigo?',
-    o1: 'pip import',
-    o2: 'install ',
-    o3: 'import modulo',
-    o4: 'modulo download',
+    pregunta: '¿Las ruta en django permite?',
+    o1: 'adminsitrar multiples paginas',
+    o2: 'ver una pagina',
+    o3: 'ver la base de datos',
+    o4: 'modulo de descarga',
     grupo: '',
   );
   Formulario form2 = new Formulario(
     pregunta:
-        '¿La instruccion import + nombre_del_paquete.nombre_del_modulo permite?',
-    o1: 'Uso de todo el codigo que contega del modulo',
-    o2: 'descargar modulo',
-    o3: 'instalar modulos',
-    o4: 'densistalar modulo',
+        '¿Donde se debe configurar para poder administrar diferentes rutas?',
+    o1: 'myapp/urls.py',
+    o2: 'lib/bin',
+    o3: 'lib/staments',
+    o4: 'lib/admin',
     grupo: '',
   );
 

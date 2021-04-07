@@ -11,19 +11,20 @@ class Test7 extends StatelessWidget {
   Test7({Key key, this.usuario}) : super(key: key);
   String grupoOpcion = '';
   Formulario form1 = new Formulario(
-    pregunta: '¿Que es un servicio web PYPI?',
-    o1: 'Provee codigo',
+    pregunta:
+        '¿para la creacion de servicios web en django uan solución sencilla es?',
+    o1: 'usar datos Rest',
     o2: 'repositiorio de servicios',
-    o3: 'Consideradas como funcinalidades de app para ser expuesto en la web',
+    o3: 'Consideradasmigracion de datos',
     o4: 'ayuda a crear modulos',
     grupo: '',
   );
   Formulario form2 = new Formulario(
-    pregunta: '¿Cual es el comando para instalar el paquete de servicios eweb?',
-    o1: 'pip install webservices[django]',
-    o2: 'install python services',
-    o3: 'import module',
-    o4: 'import install package',
+    pregunta: '¿Las operaciones soportadas en el servicio web son?',
+    o1: 'GET, POST, PUT, DELETE, PACTH',
+    o2: 'MODULOS, PIP, INSTALL, IMPORT ',
+    o3: 'PACKAPE, INSTALL, MODULE',
+    o4: 'INIT, NULL, BUILD',
     grupo: '',
   );
 

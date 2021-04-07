@@ -11,19 +11,19 @@ class Test3 extends StatelessWidget {
   Test3({Key key, this.usuario}) : super(key: key);
   String grupoOpcion = '';
   Formulario form1 = new Formulario(
-    pregunta: '¿pypi significa?',
-    o1: 'plataforma python',
+    pregunta: '¿cual es el comando para instalar django?',
+    o1: 'python -m pip install Django',
     o2: 'Repositorio de codigo',
     o3: 'Python Package Index',
     o4: 'Software adicional',
     grupo: '',
   );
   Formulario form2 = new Formulario(
-    pregunta: '¿PYPI nos ayuda a ?',
-    o1: 'encontrar app e instalarlo',
-    o2: 'descargar actualizaciones',
-    o3: 'crear aplicaciones',
-    o4: 'clonar proyectos',
+    pregunta: '¿Con que comando se comprueba la version de Django?',
+    o1: 'print(django.get_version())',
+    o2: 'print(version)',
+    o3: 'import version',
+    o4: 'clone import',
     grupo: '',
   );
 

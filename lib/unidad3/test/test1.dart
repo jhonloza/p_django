@@ -11,19 +11,19 @@ class Test1 extends StatelessWidget {
   Test1({Key key, this.usuario}) : super(key: key);
   String grupoOpcion = '';
   Formulario form1 = new Formulario(
-    pregunta: '¿Quien creo el Lenguaje Python?',
-    o1: 'Dennis Ritchie',
-    o2: 'Yukihiro Matsumoto',
-    o3: 'Guido van Rossum',
-    o4: 'Rasmus Lerdorf',
+    pregunta: '¿Django fue diseñado para?',
+    o1: 'hacer tareas comunes de desarollo web',
+    o2: 'Descarga de modulos',
+    o3: 'Instalación de paquetes',
+    o4: 'Complementos de graficas',
     grupo: '',
   );
   Formulario form2 = new Formulario(
-    pregunta: '¿Como se llama la fundacion comunitaria de Python?',
-    o1: 'Python Software Foundation',
-    o2: 'Mision Statement of the Python',
-    o3: 'Python Public Foundation',
-    o4: 'Zope Public Licence of Python',
+    pregunta: '¿Django es?',
+    o1: 'Utlitario de contraseñas',
+    o2: 'framework de aplicaciones web gratuito y código abierto',
+    o3: 'Descarga de codigo',
+    o4: 'Public Licence of Python',
     grupo: '',
   );
 

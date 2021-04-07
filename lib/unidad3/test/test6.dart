@@ -11,18 +11,18 @@ class Test6 extends StatelessWidget {
   Test6({Key key, this.usuario}) : super(key: key);
   String grupoOpcion = '';
   Formulario form1 = new Formulario(
-    pregunta: '¿Cual es el comando para instalar una interfaz?',
-    o1: 'import package',
-    o2: 'install module',
+    pregunta: '¿Para el comusmo de datos y recursos de debe implementar?',
+    o1: 'una api personalizada de django',
+    o2: 'una base de datos',
     o3: 'pip install python-interface',
-    o4: 'download module',
+    o4: 'modulos',
     grupo: '',
   );
   Formulario form2 = new Formulario(
-    pregunta: '¿Cual comando sirve para instalar servicios en python django?',
-    o1: 'pip install service nombre_del_paquete',
-    o2: 'pip install class module',
-    o3: 'pip install demon ',
+    pregunta: '¿la api personalizada de django no ayuda para?',
+    o1: 'Realizar la conexion con la base de daros',
+    o2: 'Creacion de modulos',
+    o3: 'Instalar denominaciones',
     o4: 'install module',
     grupo: '',
   );

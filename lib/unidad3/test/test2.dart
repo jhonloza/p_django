@@ -11,19 +11,19 @@ class Test2 extends StatelessWidget {
   Test2({Key key, this.usuario}) : super(key: key);
   String grupoOpcion = '';
   Formulario form1 = new Formulario(
-    pregunta: '¿Un paquete es aquel que contiene ?',
-    o1: 'varios algoritmos',
-    o2: 'varios paquetes',
-    o3: 'varios modulos',
+    pregunta: '¿Django se encarga de ?',
+    o1: 'Libreria algoritmos',
+    o2: 'Repositorios de coidgo',
+    o3: 'La compilación del desarollo web',
     o4: 'varios metodos',
     grupo: '',
   );
   Formulario form2 = new Formulario(
-    pregunta: '¿Los modulos y paquetes en Python son denominados como?',
+    pregunta: '¿Django puede ser usado para?',
     o1: 'libreria estandar',
-    o2: 'libreria',
+    o2: 'Creacion de base de datos',
     o3: 'Conjunto de modulos',
-    o4: 'Pythn recursos',
+    o4: 'Construir casi cualquier tipo de sitio web',
     grupo: '',
   );
 

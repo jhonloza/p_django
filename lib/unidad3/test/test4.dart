@@ -11,19 +11,19 @@ class Test4 extends StatelessWidget {
   Test4({Key key, this.usuario}) : super(key: key);
   String grupoOpcion = '';
   Formulario form1 = new Formulario(
-    pregunta: '¿Cual es el comando ara instalar paquetes?',
-    o1: 'pi intall',
-    o2: 'intall user',
-    o3: 'pip install --user',
-    o4: 'install',
+    pregunta: '¿Cual es la base de datos por defecto en Django?',
+    o1: 'SQLite3',
+    o2: 'MariaDB',
+    o3: 'Sqlserver',
+    o4: 'Access',
     grupo: '',
   );
   Formulario form2 = new Formulario(
-    pregunta: '¿Donde se ubican los paquete una vez intalados?',
-    o1: 'local/bin',
-    o2: 'Descargas',
-    o3: 'Carpeta local',
-    o4: 'En reppositorio',
+    pregunta: '¿Cual es el comando para instalar una base de datos?',
+    o1: 'pip install cliente_basededatos',
+    o2: 'install base de datos',
+    o3: 'pip base_De_Datos',
+    o4: 'clone base_De_Datos',
     grupo: '',
   );
 
