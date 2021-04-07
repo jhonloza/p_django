@@ -7,6 +7,8 @@ import 'package:p_django/templates/pragunta.dart';
 enum SingingCharacter { op1, op2, op3, op4 }
 
 class Test1 extends StatelessWidget{
+  List<String> usuario = new List();
+  Test1({Key key, this.usuario}):super(key: key);   //AQUI AGREGAMOS ESE INICIO DE LOS TEMAS Q YA ESTA HECHO
   String grupoOpcion = '';
   Formulario form1 = new Formulario(
     pregunta: '¿Quien creo el Lenguaje Python?',
@@ -44,7 +46,7 @@ class Test1 extends StatelessWidget{
           ),
           color: Colors.indigo.shade900,
         ),
-        drawer: LeftMenu(),
+        drawer: LeftMenu(usuario: usuario,),// modificamos este drawer para q ahora lea datos desde las otras paginas anteriores
         body: ListView(
           children: [
             Container(
@@ -75,7 +77,7 @@ class Test1 extends StatelessWidget{
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => Inicio()));
+                              builder: (context) => Inicio(usuario: usuario,)));   ///IGUALMENTE AGREGAMOS EL USUARIO PARA EL INICIO POR SI ACASO
                     },
                     child: Container(
                       width: screenWidth-130,

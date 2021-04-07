@@ -6,8 +6,8 @@ import 'package:p_django/unidad1/test/test1.dart';
 
 class Tema11 extends StatelessWidget{
   List<String> usuario = new List();
-  Tema11({Key key, this.usuario}):super(key: key);
-  Test1 test = new Test1();
+  Tema11({Key key, this.usuario}):super(key: key);//agregas ese inicio en los cuestionarios de igual manera q esta aqui solo cambias el nombre por test
+  //Test1 test = new Test1();  DESAPARECE ESTA DELCARACION
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
@@ -119,7 +119,7 @@ class Tema11 extends StatelessWidget{
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => test));
+                                        builder: (context) => Test1(usuario: usuario)));  ///AGREGAREMOS EL VALOR DE EL LIST AKI
                               },
                               child: Container(
                                 width: screenWidth-130,
