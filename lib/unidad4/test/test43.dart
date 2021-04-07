@@ -9,19 +9,19 @@ enum SingingCharacter { op1, op2, op3, op4 }
 class Test43 extends StatelessWidget {
   String grupoOpcion = '';
   Formulario form1 = new Formulario(
-    pregunta: '¿Quien creo el Lenguaje Python?',
-    o1: 'Dennis Ritchie',
-    o2: 'Yukihiro Matsumoto',
-    o3: 'Guido van Rossum',
-    o4: 'Rasmus Lerdorf',
+    pregunta: '¿Cual es el modulo para determinar tupo de imagen?',
+    o1: 'aifc',
+    o2: 'mp3',
+    o3: 'imghdr',
+    o4: 'wave',
     grupo: '',
   );
   Formulario form2 = new Formulario(
-    pregunta: '¿Como se llama la fundacion comunitaria de Python?',
-    o1: 'Python Software Foundation',
-    o2: 'Mision Statement of the Python',
-    o3: 'Python Public Foundation',
-    o4: 'Zope Public Licence of Python',
+    pregunta: '¿Con "imghdr.what (nombre archivo)" que se identifica?',
+    o1: 'Determinar tipo de imagen',
+    o2: 'Reconocer caracteres especiales',
+    o3: 'El almacenaje del archivo',
+    o4: 'identificar modulos',
     grupo: '',
   );
 
