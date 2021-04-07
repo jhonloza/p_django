@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 
 import 'package:p_django/templates/header.dart';
 import 'package:p_django/templates/leftmenu.dart';
+import 'package:p_django/unidad1/test/test6.dart';
 
-class Tema16 extends StatelessWidget{
-  
+class Tema16 extends StatelessWidget {
+  Test6 test = new Test6();
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
@@ -22,7 +23,7 @@ class Tema16 extends StatelessWidget{
             ),
           ),
         ),
-        drawer:  LeftMenu(),
+        drawer: LeftMenu(),
         body: ListView(
           children: [
             Container(
@@ -30,7 +31,7 @@ class Tema16 extends StatelessWidget{
               child: Row(
                 children: [
                   TextButton(
-                    onPressed: (){
+                    onPressed: () {
                       Navigator.pop(context);
                     },
                     child: Image(
@@ -56,7 +57,8 @@ class Tema16 extends StatelessWidget{
                   ),
                   Column(
                     children: [
-                      new Text('Colecciones',
+                      new Text(
+                        'Colecciones',
                         style: TextStyle(
                           fontFamily: 'PatuaOne',
                           fontSize: 38,
@@ -64,100 +66,113 @@ class Tema16 extends StatelessWidget{
                       ),
                       new Text(''),
                       new Container(
-                        width: screenWidth-25,
-                        child: Column(
-                          children: [
-                            Text(
-                              'Las colecciones son un tipo de datos diseñados específicamente para agrupar objetos y llevar a cabo tareas con ellos.  Las estructuras de datos más utilizadas en Python son las listas, tuplas (listas inmutables) y los diccionarios, aunque personalmente también suelo usar mucho los conjuntos (sets).\n',
-                              style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
-                              textAlign: TextAlign.justify,
-                            ),
-                            Image.network('https://runestone.academy/runestone/static/pythoned/_images/inheritance1.png'),
-                            Text('Estructuras implementadas en Colecciones',
-                              style: TextStyle(
-                                fontFamily: 'PatuaOne',
-                                fontSize: 38,
+                          width: screenWidth - 25,
+                          child: Column(
+                            children: [
+                              Text(
+                                'Las colecciones son un tipo de datos diseñados específicamente para agrupar objetos y llevar a cabo tareas con ellos.  Las estructuras de datos más utilizadas en Python son las listas, tuplas (listas inmutables) y los diccionarios, aunque personalmente también suelo usar mucho los conjuntos (sets).\n',
+                                style: TextStyle(
+                                    fontFamily: 'PatuaOne', fontSize: 24),
+                                textAlign: TextAlign.justify,
                               ),
-                              textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              '''\nNo todas las estructuras de datos exponen exactamente las mismas operaciones, por ejemplo una lista no deja buscar por clave (si bien sí por índice) y un conjunto no deja buscar ni por una cosa ni por otra.
+                              Image.network(
+                                  'https://runestone.academy/runestone/static/pythoned/_images/inheritance1.png'),
+                              Text(
+                                'Estructuras implementadas en Colecciones',
+                                style: TextStyle(
+                                  fontFamily: 'PatuaOne',
+                                  fontSize: 38,
+                                ),
+                                textAlign: TextAlign.center,
+                              ),
+                              Text(
+                                '''\nNo todas las estructuras de datos exponen exactamente las mismas operaciones, por ejemplo una lista no deja buscar por clave (si bien sí por índice) y un conjunto no deja buscar ni por una cosa ni por otra.
 
 El siguiente playground está dividido en tres ficheros, main.py desde el que se importa listas.py y diccionarios.py, para ver los resultados de uno u otro, elimina o comenta su respectivo import.\n\n''',
-                              style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
-                              textAlign: TextAlign.justify,
-                            ),
-                            Text('Listas',
-                              style: TextStyle(
-                                fontFamily: 'PatuaOne',
-                                fontSize: 38,
+                                style: TextStyle(
+                                    fontFamily: 'PatuaOne', fontSize: 24),
+                                textAlign: TextAlign.justify,
                               ),
-                              textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              '''\nUna lista es una estructura de datos y un tipo de dato en python con características especiales. Lo especial de las listas en Python es que nos permiten almacenar cualquier tipo de valor como enteros, cadenas y hasta otras funciones.
+                              Text(
+                                'Listas',
+                                style: TextStyle(
+                                  fontFamily: 'PatuaOne',
+                                  fontSize: 38,
+                                ),
+                                textAlign: TextAlign.center,
+                              ),
+                              Text(
+                                '''\nUna lista es una estructura de datos y un tipo de dato en python con características especiales. Lo especial de las listas en Python es que nos permiten almacenar cualquier tipo de valor como enteros, cadenas y hasta otras funciones.
 
 Una lista es un arreglo de elementos donde podemos ingresar cualquier tipo de dato, para acceder a estos datos podemos hacer mediante un índice.\n\n''',
-                              style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
-                              textAlign: TextAlign.justify,
-                            ),
-                            Image.network('https://i.ibb.co/nDLcqz6/image.png'),
-                            Text('Tuplas',
-                              style: TextStyle(
-                                fontFamily: 'PatuaOne',
-                                fontSize: 38,
+                                style: TextStyle(
+                                    fontFamily: 'PatuaOne', fontSize: 24),
+                                textAlign: TextAlign.justify,
                               ),
-                              textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              '''\nEn programación, en general, al querer modelar objetos de la vida real, es muy común que querramos describir un objeto como un agrupamiento de datos de distintos tipos. Veamos algunos ejemplos:
+                              Image.network(
+                                  'https://i.ibb.co/nDLcqz6/image.png'),
+                              Text(
+                                'Tuplas',
+                                style: TextStyle(
+                                  fontFamily: 'PatuaOne',
+                                  fontSize: 38,
+                                ),
+                                textAlign: TextAlign.center,
+                              ),
+                              Text(
+                                '''\nEn programación, en general, al querer modelar objetos de la vida real, es muy común que querramos describir un objeto como un agrupamiento de datos de distintos tipos. Veamos algunos ejemplos:
 
 Una fecha la podemos querer representar como la terna día (un número entero), mes (una cadena de caracteres), y año (un número entero), y tendremos por ejemplo: (25, "Mayo", 1810).\n\n''',
-                              style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
-                              textAlign: TextAlign.justify,
-                            ),
-                            Image.network('https://i.ibb.co/tQbmQb6/image.png'),
-                            Text('Diccionarios',
-                              style: TextStyle(
-                                fontFamily: 'PatuaOne',
-                                fontSize: 38,
+                                style: TextStyle(
+                                    fontFamily: 'PatuaOne', fontSize: 24),
+                                textAlign: TextAlign.justify,
                               ),
-                              textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              '''\nUn Diccionario es una estructura de datos y un tipo de dato en Python con características especiales que nos permite almacenar cualquier tipo de valor como enteros, cadenas, listas e incluso otras funciones. Estos diccionarios nos permiten además identificar cada elemento por una clave (Key).\n\n''',
-                              style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
-                              textAlign: TextAlign.justify,
-                            ),
-                            Image.network('https://i.ibb.co/Pr2qvGQ/image.png'),
-                            Text('\n\n'),
-                            Text('Micro Test\n',
-                              style: TextStyle(
-                                fontFamily: 'PatuaOne',
-                                fontSize: 38,
+                              Image.network(
+                                  'https://i.ibb.co/tQbmQb6/image.png'),
+                              Text(
+                                'Diccionarios',
+                                style: TextStyle(
+                                  fontFamily: 'PatuaOne',
+                                  fontSize: 38,
+                                ),
+                                textAlign: TextAlign.center,
                               ),
-                              textAlign: TextAlign.center,
-                            ),
-                            TextButton(
-                              onPressed: null, /*() {
-                                Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) => test));
-                              },*/
-                              child: Container(
-                                width: screenWidth-130,
-                                color: Colors.yellow.shade700,
-                                child: ImageIcon(
-                                  AssetImage('assets/images/test.png'), 
-                                  color: Colors.blue.shade700,
-                                  size: screenWidth/4,
+                              Text(
+                                '''\nUn Diccionario es una estructura de datos y un tipo de dato en Python con características especiales que nos permite almacenar cualquier tipo de valor como enteros, cadenas, listas e incluso otras funciones. Estos diccionarios nos permiten además identificar cada elemento por una clave (Key).\n\n''',
+                                style: TextStyle(
+                                    fontFamily: 'PatuaOne', fontSize: 24),
+                                textAlign: TextAlign.justify,
+                              ),
+                              Image.network(
+                                  'https://i.ibb.co/Pr2qvGQ/image.png'),
+                              Text('\n\n'),
+                              Text(
+                                'Micro Test\n',
+                                style: TextStyle(
+                                  fontFamily: 'PatuaOne',
+                                  fontSize: 38,
+                                ),
+                                textAlign: TextAlign.center,
+                              ),
+                              TextButton(
+                                onPressed: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => test));
+                                },
+                                child: Container(
+                                  width: screenWidth - 130,
+                                  color: Colors.yellow.shade700,
+                                  child: ImageIcon(
+                                    AssetImage('assets/images/test.png'),
+                                    color: Colors.blue.shade700,
+                                    size: screenWidth / 4,
+                                  ),
                                 ),
                               ),
-                            ),
-                          ],
-                        )
-                      ),
+                            ],
+                          )),
                     ],
                   ),
                   Expanded(
