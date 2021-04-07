@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 
 import 'package:p_django/templates/header.dart';
 import 'package:p_django/templates/leftmenu.dart';
+import 'package:p_django/unidad4/test/test44.dart';
 
 class Tema44 extends StatelessWidget {
+  Test44 test = new Test44();
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
@@ -29,7 +31,7 @@ class Tema44 extends StatelessWidget {
               child: Row(
                 children: [
                   TextButton(
-                    onPressed: (){
+                    onPressed: () {
                       Navigator.pop(context);
                     },
                     child: Image(
@@ -94,7 +96,12 @@ class Tema44 extends StatelessWidget {
                               textAlign: TextAlign.center,
                             ),
                             TextButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => test));
+                              },
                               child: Container(
                                 width: screenWidth - 130,
                                 color: Colors.yellow.shade700,
