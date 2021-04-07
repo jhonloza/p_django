@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 
 import 'package:p_django/templates/header.dart';
 import 'package:p_django/templates/leftmenu.dart';
+import 'package:p_django/unidad3/test/test8.dart';
 
-class Tema38 extends StatelessWidget{
-  
+class Tema38 extends StatelessWidget {
+  Test8 test = new Test8();
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
@@ -22,7 +23,7 @@ class Tema38 extends StatelessWidget{
             ),
           ),
         ),
-        drawer:  LeftMenu(),
+        drawer: LeftMenu(),
         body: ListView(
           children: [
             Container(
@@ -30,7 +31,7 @@ class Tema38 extends StatelessWidget{
               child: Row(
                 children: [
                   TextButton(
-                    onPressed: (){
+                    onPressed: () {
                       Navigator.pop(context);
                     },
                     child: Image(
@@ -57,7 +58,8 @@ class Tema38 extends StatelessWidget{
                   Column(
                     children: [
                       new Text(''),
-                      new Text('Servicios Json y Restful',
+                      new Text(
+                        'Servicios Json y Restful',
                         style: TextStyle(
                           fontFamily: 'PatuaOne',
                           fontSize: 38,
@@ -65,108 +67,118 @@ class Tema38 extends StatelessWidget{
                       ),
                       new Text(''),
                       new Container(
-                        width: screenWidth-25,
-                        child: Column(
-                          children: [
-                            Text(
-                              'Dentro de la api propia de Django puede generar las consultas de la base de datos, asi como tomar desde los servicios que puede realizarse externamente creando servicios Json y Rest para consumir dichos servicios.\n',
-                              style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
-                              textAlign: TextAlign.justify,
-                            ),
-                            Text('Servicio Rest y json',
-                              style: TextStyle(
-                                fontFamily: 'PatuaOne',
-                                fontSize: 38,
+                          width: screenWidth - 25,
+                          child: Column(
+                            children: [
+                              Text(
+                                'Dentro de la api propia de Django puede generar las consultas de la base de datos, asi como tomar desde los servicios que puede realizarse externamente creando servicios Json y Rest para consumir dichos servicios.\n',
+                                style: TextStyle(
+                                    fontFamily: 'PatuaOne', fontSize: 24),
+                                textAlign: TextAlign.justify,
                               ),
-                              textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              '''\nSe ejecutara la expocision de un API REST para manejar “customers” con Django y REST Framework.\n\n''',
-                              style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
-                              textAlign: TextAlign.justify,
-                            ),
-                            Text('Creacion del modelo',
-                              style: TextStyle(
-                                fontFamily: 'PatuaOne',
-                                fontSize: 38,
+                              Text(
+                                'Servicio Rest y json',
+                                style: TextStyle(
+                                  fontFamily: 'PatuaOne',
+                                  fontSize: 38,
+                                ),
+                                textAlign: TextAlign.center,
                               ),
-                              textAlign: TextAlign.center,
-                            ),
-                            Image.network('https://i.ibb.co/1T4xh2y/image.png'),
-
-                            Text('Creacion de la vista',
-                              style: TextStyle(
-                                fontFamily: 'PatuaOne',
-                                fontSize: 38,
+                              Text(
+                                '''\nSe ejecutara la expocision de un API REST para manejar “customers” con Django y REST Framework.\n\n''',
+                                style: TextStyle(
+                                    fontFamily: 'PatuaOne', fontSize: 24),
+                                textAlign: TextAlign.justify,
                               ),
-                              textAlign: TextAlign.center,
-                            ),
-                            Image.network('https://i.ibb.co/nM5H5Pn/image.png'),
-
-                            Text('Enlace con la URLs',
-                              style: TextStyle(
-                                fontFamily: 'PatuaOne',
-                                fontSize: 38,
+                              Text(
+                                'Creacion del modelo',
+                                style: TextStyle(
+                                  fontFamily: 'PatuaOne',
+                                  fontSize: 38,
+                                ),
+                                textAlign: TextAlign.center,
                               ),
-                              textAlign: TextAlign.center,
-                            ),
-                            Image.network('https://i.ibb.co/Gsd0DZX/image.png'),
-
-                            Text('Generacion de seriales para la base de datos',
-                              style: TextStyle(
-                                fontFamily: 'PatuaOne',
-                                fontSize: 38,
+                              Image.network(
+                                  'https://i.ibb.co/1T4xh2y/image.png'),
+                              Text(
+                                'Creacion de la vista',
+                                style: TextStyle(
+                                  fontFamily: 'PatuaOne',
+                                  fontSize: 38,
+                                ),
+                                textAlign: TextAlign.center,
                               ),
-                              textAlign: TextAlign.center,
-                            ),
-                            Image.network('https://i.ibb.co/rHZzSkD/image.png'),
-
-                            Text('Creacion de test y aplicacion',
-                              style: TextStyle(
-                                fontFamily: 'PatuaOne',
-                                fontSize: 38,
+                              Image.network(
+                                  'https://i.ibb.co/nM5H5Pn/image.png'),
+                              Text(
+                                'Enlace con la URLs',
+                                style: TextStyle(
+                                  fontFamily: 'PatuaOne',
+                                  fontSize: 38,
+                                ),
+                                textAlign: TextAlign.center,
                               ),
-                              textAlign: TextAlign.center,
-                            ),
-                            Image.network('https://i.ibb.co/G2m4QnL/image.png'),
-                            
-
-                            Text('Muestra del servicio Rest y generacion de un api Json integrada',
-                              style: TextStyle(
-                                fontFamily: 'PatuaOne',
-                                fontSize: 38,
+                              Image.network(
+                                  'https://i.ibb.co/Gsd0DZX/image.png'),
+                              Text(
+                                'Generacion de seriales para la base de datos',
+                                style: TextStyle(
+                                  fontFamily: 'PatuaOne',
+                                  fontSize: 38,
+                                ),
+                                textAlign: TextAlign.center,
                               ),
-                              textAlign: TextAlign.center,
-                            ),
-                            Image.network('https://i.ibb.co/xMf4fJs/image.png'),
-                            Text('\n\n'),
-                            Text('Micro Test\n',
-                              style: TextStyle(
-                                fontFamily: 'PatuaOne',
-                                fontSize: 38,
+                              Image.network(
+                                  'https://i.ibb.co/rHZzSkD/image.png'),
+                              Text(
+                                'Creacion de test y aplicacion',
+                                style: TextStyle(
+                                  fontFamily: 'PatuaOne',
+                                  fontSize: 38,
+                                ),
+                                textAlign: TextAlign.center,
                               ),
-                              textAlign: TextAlign.center,
-                            ),
-                            TextButton(
-                              onPressed: null, /*() {
+                              Image.network(
+                                  'https://i.ibb.co/G2m4QnL/image.png'),
+                              Text(
+                                'Muestra del servicio Rest y generacion de un api Json integrada',
+                                style: TextStyle(
+                                  fontFamily: 'PatuaOne',
+                                  fontSize: 38,
+                                ),
+                                textAlign: TextAlign.center,
+                              ),
+                              Image.network(
+                                  'https://i.ibb.co/xMf4fJs/image.png'),
+                              Text('\n\n'),
+                              Text(
+                                'Micro Test\n',
+                                style: TextStyle(
+                                  fontFamily: 'PatuaOne',
+                                  fontSize: 38,
+                                ),
+                                textAlign: TextAlign.center,
+                              ),
+                              TextButton(
+                                onPressed: null,
+                                /*() {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
                                         builder: (context) => test));
                               },*/
-                              child: Container(
-                                width: screenWidth-130,
-                                color: Colors.yellow.shade700,
-                                child: ImageIcon(
-                                  AssetImage('assets/images/test.png'), 
-                                  color: Colors.blue.shade700,
-                                  size: screenWidth/4,
+                                child: Container(
+                                  width: screenWidth - 130,
+                                  color: Colors.yellow.shade700,
+                                  child: ImageIcon(
+                                    AssetImage('assets/images/test.png'),
+                                    color: Colors.blue.shade700,
+                                    size: screenWidth / 4,
+                                  ),
                                 ),
                               ),
-                            ),
-                          ],
-                        )
-                      ),
+                            ],
+                          )),
                     ],
                   ),
                   Expanded(

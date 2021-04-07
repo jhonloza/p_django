@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 
 import 'package:p_django/templates/header.dart';
 import 'package:p_django/templates/leftmenu.dart';
+import 'package:p_django/unidad3/test/test2.dart';
 
-class Tema32 extends StatelessWidget{
-  
+class Tema32 extends StatelessWidget {
+  Test2 test = new Test2();
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
@@ -22,7 +23,7 @@ class Tema32 extends StatelessWidget{
             ),
           ),
         ),
-        drawer:  LeftMenu(),
+        drawer: LeftMenu(),
         body: ListView(
           children: [
             Container(
@@ -30,7 +31,7 @@ class Tema32 extends StatelessWidget{
               child: Row(
                 children: [
                   TextButton(
-                    onPressed: (){
+                    onPressed: () {
                       Navigator.pop(context);
                     },
                     child: Image(
@@ -56,7 +57,8 @@ class Tema32 extends StatelessWidget{
                   ),
                   Column(
                     children: [
-                      new Text('Fundamentos Basicos en Python',
+                      new Text(
+                        'Fundamentos Basicos en Python',
                         style: TextStyle(
                           fontFamily: 'PatuaOne',
                           fontSize: 38,
@@ -64,23 +66,25 @@ class Tema32 extends StatelessWidget{
                       ),
                       new Text(''),
                       new Container(
-                        width: screenWidth-25,
-                        child: Column(
-                          children: [
-                            Text(
-                              'Django es un framework web de alto nivel que permite el desarrollo rápido de sitios web seguros y mantenibles. Desarrollado por programadores experimentados, Django se encarga de gran parte de las complicaciones del desarrollo web, por lo que puedes concentrarte en escribir tu aplicación sin necesidad de reinventar la rueda.\n',
-                              style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
-                              textAlign: TextAlign.justify,
-                            ),
-                            Text('Caracteristicas',
-                              style: TextStyle(
-                                fontFamily: 'PatuaOne',
-                                fontSize: 38,
+                          width: screenWidth - 25,
+                          child: Column(
+                            children: [
+                              Text(
+                                'Django es un framework web de alto nivel que permite el desarrollo rápido de sitios web seguros y mantenibles. Desarrollado por programadores experimentados, Django se encarga de gran parte de las complicaciones del desarrollo web, por lo que puedes concentrarte en escribir tu aplicación sin necesidad de reinventar la rueda.\n',
+                                style: TextStyle(
+                                    fontFamily: 'PatuaOne', fontSize: 24),
+                                textAlign: TextAlign.justify,
                               ),
-                              textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              '''\nDjango es un framework muy completo el cual tiene las caracteristicas siguientes: 
+                              Text(
+                                'Caracteristicas',
+                                style: TextStyle(
+                                  fontFamily: 'PatuaOne',
+                                  fontSize: 38,
+                                ),
+                                textAlign: TextAlign.center,
+                              ),
+                              Text(
+                                '''\nDjango es un framework muy completo el cual tiene las caracteristicas siguientes: 
 Completo
 Django sigue la filosofía "Baterías incluidas" y provee casi todo lo que los desarrolladores quisieran que tenga "de fábrica". 
 Versátil
@@ -93,38 +97,41 @@ Mantenible
 El código de Django está escrito usando principios y patrones de diseño para fomentar la creación de código mantenible y reutilizable.
 Portable
 Django está escrito en Python, el cual se ejecuta en muchas plataformas.\n\n''',
-                              style: TextStyle(fontFamily: 'PatuaOne', fontSize: 24),
-                              textAlign: TextAlign.justify,
-                            ),
-                            Image.network('https://i.ibb.co/VNp726L/image.png'),
-                            Text('\n\n'),
-                            Text('Micro Test\n',
-                              style: TextStyle(
-                                fontFamily: 'PatuaOne',
-                                fontSize: 38,
+                                style: TextStyle(
+                                    fontFamily: 'PatuaOne', fontSize: 24),
+                                textAlign: TextAlign.justify,
                               ),
-                              textAlign: TextAlign.center,
-                            ),
-                            TextButton(
-                              onPressed: null, /*() {
+                              Image.network(
+                                  'https://i.ibb.co/VNp726L/image.png'),
+                              Text('\n\n'),
+                              Text(
+                                'Micro Test\n',
+                                style: TextStyle(
+                                  fontFamily: 'PatuaOne',
+                                  fontSize: 38,
+                                ),
+                                textAlign: TextAlign.center,
+                              ),
+                              TextButton(
+                                onPressed: null,
+                                /*() {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
                                         builder: (context) => test));
                               },*/
-                              child: Container(
-                                width: screenWidth-130,
-                                color: Colors.yellow.shade700,
-                                child: ImageIcon(
-                                  AssetImage('assets/images/test.png'), 
-                                  color: Colors.blue.shade700,
-                                  size: screenWidth/4,
+                                child: Container(
+                                  width: screenWidth - 130,
+                                  color: Colors.yellow.shade700,
+                                  child: ImageIcon(
+                                    AssetImage('assets/images/test.png'),
+                                    color: Colors.blue.shade700,
+                                    size: screenWidth / 4,
+                                  ),
                                 ),
                               ),
-                            ),
-                          ],
-                        )
-                      ),
+                            ],
+                          )),
                     ],
                   ),
                   Expanded(
