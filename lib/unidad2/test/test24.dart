@@ -7,6 +7,8 @@ import 'package:p_django/templates/pragunta.dart';
 enum SingingCharacter { op1, op2, op3, op4 }
 
 class Test24 extends StatelessWidget {
+  List<String> usuario = new List();
+  Test24({Key key, this.usuario}) : super(key: key);
   String grupoOpcion = '';
   Formulario form1 = new Formulario(
     pregunta: '¿Para importar un paquete se utliza el codigo?',

@@ -4,9 +4,9 @@ import 'package:p_django/templates/header.dart';
 import 'package:p_django/templates/leftmenu.dart';
 import 'package:p_django/unidad1/test/test3.dart';
 
-class Tema13 extends StatelessWidget{
+class Tema13 extends StatelessWidget {
   List<String> usuario = new List();
-  Tema13({Key key, this.usuario}):super(key: key);
+  Tema13({Key key, this.usuario}) : super(key: key);
   Test3 test = new Test3();
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,9 @@ class Tema13 extends StatelessWidget{
             ),
           ),
         ),
-        drawer: LeftMenu(usuario: usuario,),
+        drawer: LeftMenu(
+          usuario: usuario,
+        ),
         body: ListView(
           children: [
             Container(
@@ -165,7 +167,8 @@ La asignación de valores, como en la mayoría de lenguajes, se realiza con el s
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                          builder: (context) => test));
+                                          builder: (context) =>
+                                              Test3(usuario: usuario)));
                                 },
                                 child: Container(
                                   width: screenWidth - 130,

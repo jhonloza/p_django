@@ -6,7 +6,9 @@ import 'package:p_django/templates/pragunta.dart';
 
 enum SingingCharacter { op1, op2, op3, op4 }
 
-class Test1 extends StatelessWidget{
+class Test1 extends StatelessWidget {
+  List<String> usuario = new List();
+  Test1({Key key, this.usuario}) : super(key: key);
   String grupoOpcion = '';
   Formulario form1 = new Formulario(
     pregunta: '¿Quien creo el Lenguaje Python?',
@@ -24,8 +26,7 @@ class Test1 extends StatelessWidget{
     o4: 'Zope Public Licence of Python',
     grupo: '',
   );
-  
-  
+
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
@@ -63,27 +64,25 @@ class Test1 extends StatelessWidget{
                       String r2 = '1';
                       int sol1 = 0;
                       int sol2 = 0;
-                      if(form1.grupo == r1){
-                        sol1=1;
+                      if (form1.grupo == r1) {
+                        sol1 = 1;
                       }
-                      if(form2.grupo == r2){
-                        sol2=1;
+                      if (form2.grupo == r2) {
+                        sol2 = 1;
                       }
                       print('calculando');
                       print('calculando');
 
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => Inicio()));
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Inicio()));
                     },
                     child: Container(
-                      width: screenWidth-130,
+                      width: screenWidth - 130,
                       color: Colors.yellow.shade700,
                       child: ImageIcon(
-                        AssetImage('assets/images/test.png'), 
+                        AssetImage('assets/images/test.png'),
                         color: Colors.blue.shade700,
-                        size: screenWidth/4,
+                        size: screenWidth / 4,
                       ),
                     ),
                   ),
@@ -97,5 +96,4 @@ class Test1 extends StatelessWidget{
   }
 }
 
-void setState(Null Function() param0) {
-}
+void setState(Null Function() param0) {}

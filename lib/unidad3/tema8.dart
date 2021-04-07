@@ -4,9 +4,9 @@ import 'package:p_django/templates/header.dart';
 import 'package:p_django/templates/leftmenu.dart';
 import 'package:p_django/unidad3/test/test8.dart';
 
-class Tema38 extends StatelessWidget{
+class Tema38 extends StatelessWidget {
   List<String> usuario = new List();
-  Tema38({Key key, this.usuario}):super(key: key);
+  Tema38({Key key, this.usuario}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
@@ -24,7 +24,9 @@ class Tema38 extends StatelessWidget{
             ),
           ),
         ),
-        drawer: LeftMenu(usuario: usuario,),
+        drawer: LeftMenu(
+          usuario: usuario,
+        ),
         body: ListView(
           children: [
             Container(
@@ -161,13 +163,13 @@ class Tema38 extends StatelessWidget{
                                 textAlign: TextAlign.center,
                               ),
                               TextButton(
-                                onPressed: null,
-                                /*() {
-                                Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) => test));
-                              },*/
+                                onPressed: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              Test8(usuario: usuario)));
+                                },
                                 child: Container(
                                   width: screenWidth - 130,
                                   color: Colors.yellow.shade700,

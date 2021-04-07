@@ -4,9 +4,9 @@ import 'package:p_django/templates/header.dart';
 import 'package:p_django/templates/leftmenu.dart';
 import 'package:p_django/unidad1/test/test6.dart';
 
-class Tema16 extends StatelessWidget{
+class Tema16 extends StatelessWidget {
   List<String> usuario = new List();
-  Tema16({Key key, this.usuario}):super(key: key);
+  Tema16({Key key, this.usuario}) : super(key: key);
   Test6 test = new Test6();
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,9 @@ class Tema16 extends StatelessWidget{
             ),
           ),
         ),
-        drawer: LeftMenu(usuario: usuario,),
+        drawer: LeftMenu(
+          usuario: usuario,
+        ),
         body: ListView(
           children: [
             Container(
@@ -161,7 +163,8 @@ Una fecha la podemos querer representar como la terna día (un número entero), 
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                          builder: (context) => test));
+                                          builder: (context) =>
+                                              Test6(usuario: usuario)));
                                 },
                                 child: Container(
                                   width: screenWidth - 130,

@@ -7,7 +7,7 @@ import 'package:p_django/unidad1/test/test2.dart';
 class Tema12 extends StatelessWidget {
   Test2 test = new Test2();
   List<String> usuario = new List();
-  Tema12({Key key, this.usuario}):super(key: key);
+  Tema12({Key key, this.usuario}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
@@ -25,7 +25,9 @@ class Tema12 extends StatelessWidget {
             ),
           ),
         ),
-        drawer: LeftMenu(usuario: usuario,),
+        drawer: LeftMenu(
+          usuario: usuario,
+        ),
         body: ListView(
           children: [
             Container(
@@ -119,13 +121,15 @@ class Tema12 extends StatelessWidget {
                                 textAlign: TextAlign.center,
                               ),
                               TextButton(
-                                onPressed: null,
-                                /*() {
-                                Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) => test));
-                              },*/
+                                onPressed: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              Test2(usuario: usuario)));
+
+                                  ///AGREGAREMOS EL VALOR DE EL LIST AKI
+                                },
                                 child: Container(
                                   width: screenWidth - 130,
                                   color: Colors.yellow.shade700,

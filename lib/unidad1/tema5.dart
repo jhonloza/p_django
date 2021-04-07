@@ -4,9 +4,9 @@ import 'package:p_django/templates/header.dart';
 import 'package:p_django/templates/leftmenu.dart';
 import 'package:p_django/unidad1/test/test5.dart';
 
-class Tema15 extends StatelessWidget{
+class Tema15 extends StatelessWidget {
   List<String> usuario = new List();
-  Tema15({Key key, this.usuario}):super(key: key);
+  Tema15({Key key, this.usuario}) : super(key: key);
   Test5 test = new Test5();
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,9 @@ class Tema15 extends StatelessWidget{
             ),
           ),
         ),
-        drawer: LeftMenu(usuario: usuario,),
+        drawer: LeftMenu(
+          usuario: usuario,
+        ),
         body: ListView(
           children: [
             Container(
@@ -149,7 +151,8 @@ Usted puede llamar esos métodos y atributos con la siguiente notación: clasein
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                          builder: (context) => test));
+                                          builder: (context) =>
+                                              Test5(usuario: usuario)));
                                 },
                                 child: Container(
                                   width: screenWidth - 130,

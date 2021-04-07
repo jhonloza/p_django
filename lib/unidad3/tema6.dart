@@ -4,9 +4,9 @@ import 'package:p_django/templates/header.dart';
 import 'package:p_django/templates/leftmenu.dart';
 import 'package:p_django/unidad3/test/test6.dart';
 
-class Tema36 extends StatelessWidget{
+class Tema36 extends StatelessWidget {
   List<String> usuario = new List();
-  Tema36({Key key, this.usuario}):super(key: key);
+  Tema36({Key key, this.usuario}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
@@ -24,7 +24,9 @@ class Tema36 extends StatelessWidget{
             ),
           ),
         ),
-        drawer: LeftMenu(usuario: usuario,),
+        drawer: LeftMenu(
+          usuario: usuario,
+        ),
         body: ListView(
           children: [
             Container(
@@ -143,13 +145,13 @@ de igual manera antes de ejecutar nuestro comando SQL dentrod e la base podemos 
                                 textAlign: TextAlign.center,
                               ),
                               TextButton(
-                                onPressed: null,
-                                /*() {
-                                Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) => test));
-                              },*/
+                                onPressed: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              Test6(usuario: usuario)));
+                                },
                                 child: Container(
                                   width: screenWidth - 130,
                                   color: Colors.yellow.shade700,

@@ -4,9 +4,9 @@ import 'package:p_django/templates/header.dart';
 import 'package:p_django/templates/leftmenu.dart';
 import 'package:p_django/unidad3/test/test5.dart';
 
-class Tema35 extends StatelessWidget{
+class Tema35 extends StatelessWidget {
   List<String> usuario = new List();
-  Tema35({Key key, this.usuario}):super(key: key);
+  Tema35({Key key, this.usuario}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
@@ -24,7 +24,9 @@ class Tema35 extends StatelessWidget{
             ),
           ),
         ),
-        drawer: LeftMenu(usuario: usuario,),
+        drawer: LeftMenu(
+          usuario: usuario,
+        ),
         body: ListView(
           children: [
             Container(
@@ -212,13 +214,13 @@ La opción STATICFILES_FINDERS de Django contiene una lista de buscadores que sa
                                 textAlign: TextAlign.center,
                               ),
                               TextButton(
-                                onPressed: null,
-                                /*() {
-                                Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) => test));
-                              },*/
+                                onPressed: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              Test5(usuario: usuario)));
+                                },
                                 child: Container(
                                   width: screenWidth - 130,
                                   color: Colors.yellow.shade700,

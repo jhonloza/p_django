@@ -6,7 +6,7 @@ import 'package:p_django/unidad2/test/test23.dart';
 
 class Tema23 extends StatelessWidget {
   List<String> usuario = new List();
-  Tema23({Key key, this.usuario}):super(key: key);
+  Tema23({Key key, this.usuario}) : super(key: key);
   Test23 test = new Test23();
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,9 @@ class Tema23 extends StatelessWidget {
             ),
           ),
         ),
-        drawer: LeftMenu(usuario: usuario,),
+        drawer: LeftMenu(
+          usuario: usuario,
+        ),
         body: ListView(
           children: [
             Container(
@@ -118,7 +120,8 @@ class Tema23 extends StatelessWidget {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => test));
+                                        builder: (context) =>
+                                            Test23(usuario: usuario)));
                               },
                               child: Container(
                                 width: screenWidth - 130,

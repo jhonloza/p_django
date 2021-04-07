@@ -7,6 +7,8 @@ import 'package:p_django/templates/pragunta.dart';
 enum SingingCharacter { op1, op2, op3, op4 }
 
 class Test6 extends StatelessWidget {
+  List<String> usuario = new List();
+  Test6({Key key, this.usuario}) : super(key: key);
   String grupoOpcion = '';
   Formulario form1 = new Formulario(
     pregunta: '¿Cual es el comando para instalar una interfaz?',

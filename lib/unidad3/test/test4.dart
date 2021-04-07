@@ -7,6 +7,8 @@ import 'package:p_django/templates/pragunta.dart';
 enum SingingCharacter { op1, op2, op3, op4 }
 
 class Test4 extends StatelessWidget {
+  List<String> usuario = new List();
+  Test4({Key key, this.usuario}) : super(key: key);
   String grupoOpcion = '';
   Formulario form1 = new Formulario(
     pregunta: '¿Cual es el comando ara instalar paquetes?',

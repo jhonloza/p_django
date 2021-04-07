@@ -4,9 +4,9 @@ import 'package:p_django/templates/header.dart';
 import 'package:p_django/templates/leftmenu.dart';
 import 'package:p_django/unidad1/test/test7.dart';
 
-class Tema17 extends StatelessWidget{
+class Tema17 extends StatelessWidget {
   List<String> usuario = new List();
-  Tema17({Key key, this.usuario}):super(key: key);
+  Tema17({Key key, this.usuario}) : super(key: key);
   Test7 test = new Test7();
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,9 @@ class Tema17 extends StatelessWidget{
             ),
           ),
         ),
-        drawer: LeftMenu(usuario: usuario,),
+        drawer: LeftMenu(
+          usuario: usuario,
+        ),
         body: ListView(
           children: [
             Container(
@@ -109,7 +111,8 @@ En el caso de Python, el manejo de excepciones se hace mediante los bloques que 
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                          builder: (context) => test));
+                                          builder: (context) =>
+                                              Test7(usuario: usuario)));
                                 },
                                 child: Container(
                                   width: screenWidth - 130,
