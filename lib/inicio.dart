@@ -32,7 +32,8 @@ import 'package:p_django/unidad4/tema5.dart';
 import 'package:p_django/unidad4/tema6.dart';
 
 class Inicio extends StatelessWidget {
-  Tema11 t11 = new Tema11();
+  List<String> usuario = new List();
+  Inicio({Key key, this.usuario}):super(key: key);
   Tema12 t12 = new Tema12();
   Tema13 t13 = new Tema13();
   Tema14 t14 = new Tema14();
@@ -78,7 +79,9 @@ class Inicio extends StatelessWidget {
           ),
           color: Colors.indigo.shade900,
         ),
-        drawer: LeftMenu(),
+        drawer: LeftMenu(
+          usuario: usuario,
+        ),
         body: ListView(
           children: [
             Container(
@@ -127,7 +130,7 @@ class Inicio extends StatelessWidget {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => t11));
+                                        builder: (context) => Tema11(usuario: usuario,)));
                               },
                               child: Image.asset(
                                 'assets/images/tema1/tema11.png',

@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
 class LeftMenu extends StatelessWidget{
+  List<String> usuario = new List();
+  LeftMenu({Key key, this.usuario}):super(key: key);
   @override
   Widget build(BuildContext context) {
     return Drawer(
       child: ListView(
         children: [
           DrawerHeader(
-            child: Text('Mi cuenta', style: TextStyle(fontFamily: 'PatuaOne'),),
+            child: Text(usuario[0], style: TextStyle(fontFamily: 'PatuaOne', fontSize: 38),),
             decoration: BoxDecoration(
               color: Colors.blue,
             ),

@@ -5,6 +5,8 @@ import 'package:p_django/templates/leftmenu.dart';
 import 'package:p_django/unidad1/test/test1.dart';
 
 class Tema11 extends StatelessWidget{
+  List<String> usuario = new List();
+  Tema11({Key key, this.usuario}):super(key: key);
   Test1 test = new Test1();
   @override
   Widget build(BuildContext context) {
@@ -23,7 +25,7 @@ class Tema11 extends StatelessWidget{
             ),
           ),
         ),
-        drawer:  LeftMenu(),
+        drawer:  LeftMenu(usuario: usuario,),
         body: ListView(
           children: [
             Container(
